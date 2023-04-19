@@ -1,16 +1,26 @@
 :root {
   font-size: 10px;
   --app-background-main: #1c1d1e;
+
   --sections-background: #171718;
+
   --font-color-main: white;
+  --font-color-grey: #e8e8e8;
+
   --list-item-color-light: #25292b;
+
   --orange-color: #ef5a21;
+
+  --light-grey: #44494b;
+
+  --slot-badge-main-background: #242a2b;
 }
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: sans-serif;
 }
 
 html,

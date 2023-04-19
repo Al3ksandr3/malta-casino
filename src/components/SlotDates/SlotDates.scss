@@ -1,0 +1,42 @@
+%flex-class {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.slot-dates {
+  height: 70%;
+  width: 60%;
+
+  @extend %flex-class;
+
+  padding: 5px;
+  border-radius: 20px;
+
+  color: var(--font-color-main);
+
+  background-color: var(--slot-badge-main-background);
+
+  &__header {
+    height: 100%;
+    width: 35%;
+
+    @extend %flex-class;
+
+    border-radius: 20px;
+
+    font-size: 1.5rem;
+
+    background-color: var(--light-grey);
+  }
+
+  &__dates {
+    height: 100%;
+    width: 65%;
+
+    @extend %flex-class;
+
+    font-size: 1.4rem;
+  }
+}

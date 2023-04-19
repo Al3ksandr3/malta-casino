@@ -1,0 +1,44 @@
+@import "../../helpers/helper-classes.scss";
+
+%common-props {
+  height: 70%;
+
+  border: none;
+  border-radius: 5px;
+  outline: none;
+
+  color: var(--font-color-main);
+  font-size: 1.5rem;
+
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.account-buttons__sign-up {
+  @extend %common-props;
+  justify-content: center;
+
+  width: 30%;
+
+  background-color: var(--light-grey);
+}
+
+.account-buttons__sign-in {
+  @extend %common-props;
+  justify-content: space-evenly;
+
+  width: 25%;
+
+  background-color: var(--orange-color);
+
+  &__icon {
+    height: 60%;
+  }
+
+  &__text {
+    @extend %text-overflow;
+  }
+}

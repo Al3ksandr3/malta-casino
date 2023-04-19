@@ -1,6 +1,6 @@
 import "./App.scss";
 
-import RulesAndConditionsSection from "../RulesAndConditionsSection/RulesAndConditionsSection";
+import Header from "../Header/Header";
 import CallToPlay from "../CallToPlay/CallToPlay";
 
 // ------ COMPONENT: START ------ //
@@ -8,7 +8,7 @@ import CallToPlay from "../CallToPlay/CallToPlay";
 export default function App() {
   return (
     <div className="app">
-      <RulesAndConditionsSection />
+      <Header />
       <CallToPlay />
     </div>
   );

@@ -1,0 +1,40 @@
+%flex-class {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.header-call-to-play {
+  height: 5%;
+  width: 100%;
+
+  position: fixed;
+  top: 0;
+
+  @extend %flex-class;
+  justify-content: space-between;
+
+  padding: 0 2%;
+
+  &__left-container {
+    height: 100%;
+    width: 50%;
+
+    @extend %flex-class;
+    justify-content: flex-start;
+
+    &__brand-logo {
+      height: 80%;
+
+      margin-right: 2rem;
+    }
+  }
+
+  &__right-container {
+    height: 100%;
+    width: 50%;
+
+    @extend %flex-class;
+    justify-content: flex-end;
+  }
+}
