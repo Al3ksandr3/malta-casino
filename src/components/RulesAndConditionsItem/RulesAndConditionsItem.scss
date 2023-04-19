@@ -1,0 +1,26 @@
+.rules-and-conditions-item {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--list-item-color-light);
+  padding: 0 2%;
+  border-radius: 10px;
+  font-size: 1.2rem;
+
+  &__content {
+    width: 95%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: var(--font-color-main);
+  }
+
+  &__icon {
+    width: 5%;
+    height: 50%;
+    cursor: pointer;
+  }
+}

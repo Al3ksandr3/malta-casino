@@ -1,0 +1,21 @@
+:root {
+  font-size: 10px;
+  --app-background-main: #1c1d1e;
+  --sections-background: #171718;
+  --font-color-main: white;
+  --list-item-color-light: #25292b;
+  --orange-color: #ef5a21;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+}
