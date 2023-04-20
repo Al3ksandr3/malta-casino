@@ -8,17 +8,17 @@
 .stage-info-container {
   @extend %flex-class;
 
-  height: calc(var(--main-viewport-height) * 0.83);
+  height: calc(var(--main-viewport-height) * 0.13);
   width: 100%;
 
   flex-shrink: 0;
 
   position: relative;
 
-  border: 2px solid var(--light-grey-for-headers);
+  border: 2px solid var(--light-grey-200);
   border-radius: 15px;
 
-  background-color: var(--light-grey-for-headers);
+  background-color: var(--light-grey-200);
 
   &__header {
     @extend %flex-class;
@@ -44,6 +44,7 @@
 
   &__content {
     width: 100%;
+
     background-color: var(--sections-background);
   }
 }
