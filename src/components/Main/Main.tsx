@@ -10,7 +10,6 @@ export default function Main() {
     <main className="main">
       <StagesList />
       <StageInfoContainer headerText="1 ₾ რეიკი = 1 ქულას" />
-      <StageInfoContainer headerText="1 ₾ რეიკი = 1 ქულას" />
     </main>
   );
 }

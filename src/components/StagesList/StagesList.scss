@@ -1,5 +1,5 @@
 .stages-list {
-  height: 15%;
+  height: calc(var(--main-viewport-height) * 0.17);
   width: 100%;
 
   flex-shrink: 0;
