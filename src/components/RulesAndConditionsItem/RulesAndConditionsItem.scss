@@ -12,6 +12,8 @@
   border-radius: 10px;
   font-size: 1.2rem;
 
+  list-style-type: none;
+
   &__content {
     @extend %text-overflow;
     width: 95%;
