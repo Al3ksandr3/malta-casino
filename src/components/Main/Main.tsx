@@ -2,6 +2,7 @@ import StageInfoContainer from "../StageInfoContainer/StageInfoContainer";
 import "./Main.scss";
 
 import StagesList from "../StagesList/StagesList";
+import LiderboardListItem from "../LiderboardListItem/LiderboardListItem";
 
 // ------ COMPONENT: START ------ //
 
@@ -9,7 +10,6 @@ export default function Main() {
   return (
     <main className="main">
       <StagesList />
-      <StageInfoContainer headerText="1 ₾ რეიკი = 1 ქულას" />
     </main>
   );
 }

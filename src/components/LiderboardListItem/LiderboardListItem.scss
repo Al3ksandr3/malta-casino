@@ -1,0 +1,36 @@
+@use "sass:math";
+
+.liderboard-list-item {
+  height: 12%;
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns: repeat(3, math.div(100%, 3));
+  grid-template-rows: 100%;
+
+  justify-items: center;
+  align-items: center;
+
+  border: 4px solid var(--grey-200);
+  border-radius: 40px;
+
+  background-color: var(--grey-700);
+
+  &__place-index {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+
+    justify-self: self-start;
+  }
+
+  &__voucher-amount {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+
+  &__prize {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+  }
+}

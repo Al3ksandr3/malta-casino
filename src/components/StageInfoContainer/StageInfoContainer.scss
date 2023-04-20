@@ -15,10 +15,10 @@
 
   position: relative;
 
-  border: 2px solid var(--light-grey-200);
+  border: 2px solid var(--grey-200);
   border-radius: 15px;
 
-  background-color: var(--light-grey-200);
+  background-color: var(--grey-200);
 
   &__header {
     @extend %flex-class;
@@ -35,8 +35,8 @@
     width: 35%;
     height: 5px;
 
-    background-color: var(--orange-color);
-    box-shadow: 0 3px 10px var(--orange-color);
+    background-color: var(--brand-orange-color);
+    box-shadow: 0 3px 10px var(--brand-orange-color);
 
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -44,7 +44,5 @@
 
   &__content {
     width: 100%;
-
-    background-color: var(--sections-background);
   }
 }
