@@ -1,0 +1,49 @@
+%flex-class {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.stage-info-container {
+  @extend %flex-class;
+
+  height: 100%;
+  width: 100%;
+
+  flex-shrink: 0;
+
+  position: relative;
+
+  border: 2px solid var(--light-grey-for-headers);
+  border-radius: 15px;
+
+  background-color: var(--light-grey-for-headers);
+
+  &__header {
+    @extend %flex-class;
+
+    color: var(--font-color-main);
+
+    font-size: 2.2rem;
+  }
+
+  &__orange-line {
+    position: absolute;
+    top: 0;
+
+    width: 35%;
+    height: 5px;
+
+    background-color: var(--orange-color);
+    box-shadow: 0 3px 10px var(--orange-color);
+
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+
+  &__content {
+    width: 100%;
+    background-color: var(--sections-background);
+  }
+}

@@ -3,4 +3,8 @@
   height: 100%;
   background-color: var(--app-background-main);
   overflow-y: auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
