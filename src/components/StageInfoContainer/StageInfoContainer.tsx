@@ -11,7 +11,7 @@ interface StageInfoContainerProps {
 // ------ COMPONENT: START ------ //
 
 export default function StageInfoContainer(props: StageInfoContainerProps) {
-  const parentElementCSSClasses = props.additionalCSSClass
+  const parentElementCSSClasses: string = props.additionalCSSClass
     ? `stage-info-container ${props.additionalCSSClass}`
     : "stage-info-container";
 

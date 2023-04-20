@@ -4,12 +4,17 @@ import React, { useState } from "react";
 
 import StagesListItem from "../StagesListItem/StagesListItem";
 
+interface IStageListItem {
+  stageDate: string;
+  stageDescription: string;
+}
+
 // ------ COMPONENT: START ------ //
 
 export default function StagesList() {
   const [indexOfSelectedStage, setIndexOfSelectedStage] = useState(0);
 
-  const stagesListItems = [
+  const stagesListItems: IStageListItem[] = [
     { stageDate: "1 - 29 აპრილი", stageDescription: "Cash Games" },
     { stageDate: "13 - 29 აპრილი", stageDescription: "Spring Series" },
     { stageDate: "30 აპრილი", stageDescription: "Final Stage" },
@@ -22,8 +27,8 @@ export default function StagesList() {
 
     if (!clickedStage) return;
 
-    const indexOfClickedStage = (clickedStage as HTMLElement).dataset
-      .stageIndex;
+    const indexOfClickedStage: string = (clickedStage as HTMLElement).dataset
+      .stageIndex as string;
 
     setIndexOfSelectedStage(Number(indexOfClickedStage));
   }

@@ -6,7 +6,7 @@ import RulesAndConditionsItem from "../RulesAndConditionsItem/RulesAndConditions
 // ------ COMPONENT: START ------ //
 
 export default function RulesAndConditionsSection() {
-  const rulesAndConditionsList = [
+  const rulesAndConditionsList: string[] = [
     "როდის იწყება და რა ფორმატით გაიმართება აქცია?",
     "როგორ მივიღო აქციაში მონაწილეობა?",
     "სხვადასხვა",

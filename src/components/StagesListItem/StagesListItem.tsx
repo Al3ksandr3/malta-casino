@@ -11,7 +11,7 @@ interface StagesListItemProps {
 // ------ COMPONENT: START ------ //
 
 export default function StagesListItem(props: StagesListItemProps) {
-  const [baseClass, stageDateClass, stageDescriptionClass] =
+  const [baseClass, stageDateClass, stageDescriptionClass]: string[] =
     generateStageItemClassesBasedOnStageSelection(props.stageIsSelected);
 
   return (
