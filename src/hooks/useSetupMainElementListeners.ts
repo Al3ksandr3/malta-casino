@@ -24,9 +24,13 @@ export function useSetupMainElementListeners(): void {
       }
     }
 
-    const mainElement = document.querySelector(".main") as HTMLElement;
+    const mainElement: HTMLElement = document.querySelector(
+      ".main"
+    ) as HTMLElement;
 
-    const mutationObserver = new MutationObserver(mutationObserverCallback);
+    const mutationObserver: MutationObserver = new MutationObserver(
+      mutationObserverCallback
+    );
 
     mutationObserver.observe(mainElement, { childList: true });
 

@@ -9,7 +9,7 @@ import { useSetupMainElementListeners } from "../../hooks/useSetupMainElementLis
 // ------ COMPONENT: START ------ //
 
 export default function App() {
-  useSetupMainElementListeners();
+  // useSetupMainElementListeners();
 
   return (
     <div className="app">

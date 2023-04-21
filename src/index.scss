@@ -2,8 +2,6 @@
   font-size: 10px;
   --app-background-main: #1c1d1e; // Components: App
 
-  --sections-background: #171718; // Components: CallToPlay
-
   --font-color-main: white; // Components: AccountsButton, CallToPlay, TournamentAnnouncement, StageInfoContainer, SlotDates, SectionHeader, RulesAndConditionsItem
   --font-color-grey: #e8e8e8; // Components: TournamentAnnouncement
 
@@ -11,6 +9,7 @@
 
   --brand-orange-color: #ef5a21; // Components: AccountsButton, CallToPlay, StagesListItem, StageInfoContainer
 
+  --grey-900: #171718; // Components: CallToPlay, StageInfoContainer
   --grey-700: #1e2122; // Components: LiderboardListItem
   --grey-600: #25292b; // Components: GreyContainer
   --grey-200: #2c3234; // Components: StagesList, StageInfoContainer, LiderboardListItem
@@ -20,7 +19,7 @@
 
   --stages-list-font-color: #d5d6d6; // Components: StagesList
 
-  --main-container-height: 57vh; // Components: StagesList, StageInfoContainer
+  --main-element-viewport-height: 57vh; // Components: StagesList, StageInfoContainer, CashGamesStage
 }
 
 * {

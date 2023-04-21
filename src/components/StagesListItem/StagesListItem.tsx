@@ -1,4 +1,5 @@
 import "./StagesListItem.scss";
+
 import { generateStageItemClassesBasedOnStageSelection } from "./helper-functions";
 
 interface StagesListItemProps {

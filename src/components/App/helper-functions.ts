@@ -8,7 +8,7 @@ export function setMainElementHeight(): void {
   const requiredViewportPortion: string = "57vh";
 
   rootElement.style.setProperty(
-    "--main-viewport-height",
+    "--main-element-viewport-height",
     requiredViewportPortion
   );
 
