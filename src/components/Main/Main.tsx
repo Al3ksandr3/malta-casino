@@ -9,6 +9,7 @@ import SpringSeriesStage from "../stages/SpringSeriesStage/SpringSeriesStage";
 import FinalStage from "../stages/FinalStage/FinalStage";
 
 import RulesAndConditionsSection from "../RulesAndConditionsSection/RulesAndConditionsSection";
+import SimilarPromotionsSection from "../SimilarPromotionsSection/SimilarPromotionsSection";
 
 // ------ COMPONENT: START ------ //
 
@@ -38,6 +39,7 @@ export default function Main() {
       {indexOfSelectedStage === 1 && <SpringSeriesStage />}
       {indexOfSelectedStage === 2 && <FinalStage />}
       <RulesAndConditionsSection />
+      <SimilarPromotionsSection />
     </main>
   );
 }

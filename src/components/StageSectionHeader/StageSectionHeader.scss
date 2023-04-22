@@ -1,6 +1,20 @@
+// ------ STYLES: START ------ //
+
 .stage-section-header {
+  width: 100%;
+
   font-size: 1.8rem;
   color: var(--font-color-main);
 
-  margin-bottom: 3rem;
+  margin-bottom: calc(var(--main-element-viewport-height) * 0.04);
+
+  // ------ CASES: START ------ //
+
+  &---similar-promotions-section-case {
+    padding: 0 5%;
+  }
+
+  // ------ CASES: END ------ //
 }
+
+// ------ STYLES: END ------ //

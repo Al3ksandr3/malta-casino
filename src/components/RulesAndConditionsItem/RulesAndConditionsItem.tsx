@@ -5,7 +5,7 @@ import { getClickHandler } from "../../helpers/helper-functions";
 import ArrowDownIcon from "./assets/arrow-down-icon.svg";
 
 interface RulesAndConditionsItemProps {
-  children: string;
+  itemContent: string;
 }
 
 // ------ COMPONENT: START ------ //
@@ -15,7 +15,7 @@ export default function RulesAndConditionsItem(
 ) {
   return (
     <li className="rules-and-conditions-item">
-      <p className="rules-and-conditions-item__content">{props.children}</p>
+      <p className="rules-and-conditions-item__content">{props.itemContent}</p>
       <img
         className="rules-and-conditions-item__icon"
         src={ArrowDownIcon}

@@ -9,6 +9,8 @@
   align-items: center;
   justify-content: space-between;
 
+  padding: 0 5%;
+
   margin-bottom: calc(var(--main-element-viewport-height) * 0.09);
 
   &__footer-note {
@@ -16,12 +18,6 @@
     width: 100%;
 
     color: var(--font-color-main);
-    font-size: 1.4rem;
-    text-align: center;
-
-    &__link {
-      color: var(--brand-orange-color);
-    }
     font-size: 1.4rem;
     text-align: center;
 
