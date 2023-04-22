@@ -1,0 +1,24 @@
+%common-props {
+  color: var(--font-color-main);
+  text-align: center;
+
+  padding: 0 10%;
+}
+
+// ------ STYLES: START ------ //
+
+.side-leaderboards-notification {
+  &__header {
+    @extend %common-props;
+
+    font-size: 2rem;
+  }
+
+  &__hint {
+    @extend %common-props;
+
+    font-size: 1.5rem;
+  }
+}
+
+// ------ STYLES: END ------ //

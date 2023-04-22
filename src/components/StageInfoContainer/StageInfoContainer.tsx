@@ -3,9 +3,10 @@ import "./StageInfoContainer.scss";
 import React from "react";
 
 interface StageInfoContainerProps {
-  headerText: string;
+  headerText?: string;
   children?: React.ReactElement;
   additionalCSSClass?: string;
+  activateContentBlock: boolean;
 }
 
 // ------ COMPONENT: START ------ //
@@ -17,9 +18,13 @@ export default function StageInfoContainer(props: StageInfoContainerProps) {
 
   return (
     <div className={parentElementCSSClasses}>
-      <h3 className="stage-info-container__header">{props.headerText}</h3>
+      <h3 className="stage-info-container__header">
+        {props.headerText || props.children}
+      </h3>
       <span className="stage-info-container__orange-line" />
-      <div className="stage-info-container__content">{props.children}</div>
+      {props.activateContentBlock && (
+        <div className="stage-info-container__content">{props.children}</div>
+      )}
     </div>
   );
 }
