@@ -10,6 +10,9 @@ $border-radius: 15px;
 // This component was first used in CashGamesStage component
 
 // ------ STYLES: START ------ //
+// This component was first used in CashGamesStage component
+
+// ------ STYLES: START ------ //
 
 .stage-info-container {
   @extend %flex-class;
@@ -38,6 +41,8 @@ $border-radius: 15px;
 
     flex-shrink: 0;
 
+    flex-shrink: 0;
+
     color: var(--font-color-main);
   }
 
@@ -56,6 +61,9 @@ $border-radius: 15px;
   }
 
   &__content {
+    @extend %flex-class;
+    justify-content: space-between;
+
     @extend %flex-class;
     justify-content: space-between;
 
@@ -87,5 +95,7 @@ $border-radius: 15px;
 
   // ------ CASES: END ------ //
 }
+
+// ------ STYLES: END ------ //
 
 // ------ STYLES: END ------ //
