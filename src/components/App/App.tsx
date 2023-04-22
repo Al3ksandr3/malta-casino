@@ -4,12 +4,24 @@ import Header from "../Header/Header";
 import CallToPlay from "../CallToPlay/CallToPlay";
 import Main from "../Main/Main";
 
-import { useSetupMainElementListeners } from "../../hooks/useSetupMainElementListeners";
+import { useLayoutEffect } from "react";
+import { calculateBottomPaddingForMainElement } from "./helper-functions";
 
 // ------ COMPONENT: START ------ //
 
 export default function App() {
-  // useSetupMainElementListeners();
+  useLayoutEffect(() => {
+    calculateBottomPaddingForMainElement();
+
+    window.addEventListener("resize", calculateBottomPaddingForMainElement);
+
+    return () => {
+      window.removeEventListener(
+        "resize",
+        calculateBottomPaddingForMainElement
+      );
+    };
+  }, []);
 
   return (
     <div className="app">
