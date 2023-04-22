@@ -8,6 +8,8 @@ import CashGamesStage from "../stages/CashGamesStage/CashGamesStage";
 import SpringSeriesStage from "../stages/SpringSeriesStage/SpringSeriesStage";
 import FinalStage from "../stages/FinalStage/FinalStage";
 
+import RulesAndConditionsSection from "../RulesAndConditionsSection/RulesAndConditionsSection";
+
 // ------ COMPONENT: START ------ //
 
 export default function Main() {
@@ -33,10 +35,9 @@ export default function Main() {
         indexOfSelectedStage={indexOfSelectedStage}
       />
       {indexOfSelectedStage === 0 && <CashGamesStage />}
-
       {indexOfSelectedStage === 1 && <SpringSeriesStage />}
-
       {indexOfSelectedStage === 2 && <FinalStage />}
+      <RulesAndConditionsSection />
     </main>
   );
 }

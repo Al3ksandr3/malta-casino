@@ -1,6 +1,6 @@
 import "./RulesAndConditionsSection.scss";
 
-import SectionHeader from "../SectionHeader/SectionHeader";
+import StageSectionHeader from "../StageSectionHeader/StageSectionHeader";
 import RulesAndConditionsItem from "../RulesAndConditionsItem/RulesAndConditionsItem";
 
 // ------ COMPONENT: START ------ //
@@ -14,7 +14,7 @@ export default function RulesAndConditionsSection() {
 
   return (
     <section className="rules-and-conditions-section">
-      <SectionHeader>წესები და პირობები</SectionHeader>
+      <StageSectionHeader>წესები და პირობები</StageSectionHeader>
       <ul className="rules-and-conditions-section__list">
         {rulesAndConditionsList.map((content) => (
           <RulesAndConditionsItem>{content}</RulesAndConditionsItem>

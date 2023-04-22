@@ -1,3 +1,7 @@
+// This component was first used in CashGamesStage component
+
+// ------ STYLES: START ------ //
+
 .grey-container {
   width: 100%;
 
@@ -9,4 +13,34 @@
   border-radius: 15px;
 
   background-color: var(--grey-600);
+
+  // ------ CASES: START ------ //
+
+  &---cash-games-stage-case--one {
+    @extend .grey-container;
+
+    height: 26%;
+  }
+
+  &---cash-games-stage-case--two {
+    @extend .grey-container;
+
+    height: 17%;
+  }
+
+  &---cash-games-stage-case--three {
+    @extend .grey-container;
+
+    height: 26%;
+  }
+
+  &---cash-games-stage-case--four {
+    @extend .grey-container;
+
+    height: 17%;
+  }
+
+  // ------ CASES: END ------ //
 }
+
+// ------ STYLES: END ------ //

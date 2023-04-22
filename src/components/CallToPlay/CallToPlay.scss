@@ -9,10 +9,13 @@
 
   position: fixed;
   bottom: 0;
+  z-index: 5;
 
-  border-left: 1.5px solid var(--brand-orange-color);
-  border-right: 1.5px solid var(--brand-orange-color);
-  border-top: 3px solid var(--brand-orange-color);
+  border: {
+    left: 1.5px solid var(--brand-orange-color);
+    right: 1.5px solid var(--brand-orange-color);
+    top: 3px solid var(--brand-orange-color);
+  }
 
   background-color: var(--grey-900);
 

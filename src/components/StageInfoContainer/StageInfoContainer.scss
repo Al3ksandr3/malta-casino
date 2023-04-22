@@ -7,13 +7,14 @@
 
 $border-radius: 15px;
 
-// This component was first used in the CashGamesStage component
+// This component was first used in CashGamesStage component
+
+// ------ STYLES: START ------ //
 
 .stage-info-container {
   @extend %flex-class;
   justify-content: flex-start;
 
-  height: calc(var(--main-element-viewport-height) * 3);
   width: 100%;
 
   flex-shrink: 0;
@@ -33,14 +34,11 @@ $border-radius: 15px;
   &__header {
     @extend %flex-class;
 
-    height: 5%;
     width: 100%;
 
-    color: var(--font-color-main);
-
-    font-size: 2.2rem;
-
     flex-shrink: 0;
+
+    color: var(--font-color-main);
   }
 
   &__orange-line {
@@ -58,7 +56,9 @@ $border-radius: 15px;
   }
 
   &__content {
-    height: 95%;
+    @extend %flex-class;
+    justify-content: space-between;
+
     width: 100%;
 
     background-color: var(--grey-900);
@@ -66,4 +66,26 @@ $border-radius: 15px;
     border-bottom-left-radius: $border-radius;
     border-bottom-right-radius: $border-radius;
   }
+
+  // ------ CASES: START ------ //
+
+  &---cash-games-stage-case {
+    height: 100%;
+
+    .stage-info-container__header {
+      height: 5%;
+
+      font-size: 2.2rem;
+    }
+
+    .stage-info-container__content {
+      height: 95%;
+
+      padding: 0 3%;
+    }
+  }
+
+  // ------ CASES: END ------ //
 }
+
+// ------ STYLES: END ------ //
