@@ -25,9 +25,13 @@ export default function SimilarPromotionsSection() {
         მსგავსი აქციები
       </StageSectionHeader>
       <ul className="similar-promotions-section__list">
-        {bannersList.map((bannerSrc) => (
-          <SimilarPromotionsItem key={bannerSrc} bannerSrc={bannerSrc} />
-        ))}
+        {bannersList.map((bannerSrc) => {
+          const uniqueKey = `${bannerSrc} ${Math.random()}`;
+
+          return (
+            <SimilarPromotionsItem key={uniqueKey} bannerSrc={bannerSrc} />
+          );
+        })}
       </ul>
     </section>
   );

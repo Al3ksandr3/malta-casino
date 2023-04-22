@@ -17,7 +17,7 @@ export default function RulesAndConditionsSection() {
       <StageSectionHeader>წესები და პირობები</StageSectionHeader>
       <ul className="rules-and-conditions-section__list">
         {rulesAndConditionsList.map((content) => (
-          <RulesAndConditionsItem itemContent={content} />
+          <RulesAndConditionsItem key={content} itemContent={content} />
         ))}
       </ul>
     </section>
