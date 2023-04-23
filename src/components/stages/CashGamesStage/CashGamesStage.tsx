@@ -3,9 +3,12 @@ import "./CashGamesStage.scss";
 import StageInfoContainer from "../../StageInfoContainer/StageInfoContainer";
 import HoldemListHeader from "../../HoldemListHeader/HoldemListHeader";
 import GreyContainer from "../../GreyContainer/GreyContainer";
+
 import LeaderboardHeaderRow from "../../LeaderboardHeaderRow/LeaderboardHeaderRow";
 import LeaderboardListItem from "../../LeaderboardListItem/LeaderboardListItem";
+
 import PrizeDescriptionItemWithOrangeLine from "../../PrizeDescriptionItemWithOrangeLine/PrizeDescriptionItemWithOrangeLine";
+
 import SideLeaderboardsNotification from "../../SideLeaderboardsNotification/SideLeaderboardsNotification";
 
 import { leaderboardPrizesList, prizesWithOrangeLineList } from "./mock-data";
