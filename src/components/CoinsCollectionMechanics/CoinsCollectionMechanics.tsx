@@ -12,12 +12,13 @@ export default function CoinsCollectionMechanics() {
       <p className="coins-collection-mechanics__text">
         ქულების დაგროვების მექანიკა
       </p>
-      <img
-        className="coins-collection-mechanics__arrow-icon"
-        src={ArrowDownIcon}
-        alt="Arrow icon pointing down."
-        onClick={getClickHandler()}
-      />
+      <span className="coins-collection-mechanics__arrow-icon">
+        <img
+          src={ArrowDownIcon}
+          alt="Arrow icon pointing down."
+          onClick={getClickHandler()}
+        />
+      </span>
     </span>
   );
 }

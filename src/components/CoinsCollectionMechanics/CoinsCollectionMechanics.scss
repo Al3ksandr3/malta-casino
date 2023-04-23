@@ -29,9 +29,20 @@
     position: absolute;
     right: 0;
 
-    border: 1px solid var(--font-color-main);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    border: 2px solid var(--font-color-main);
     border-radius: 2vh;
 
     background-color: var(--brand-orange-color);
+
+    cursor: pointer;
+
+    img {
+      height: 60%;
+    }
   }
 }

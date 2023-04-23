@@ -1,7 +1,9 @@
-@import "../../helpers/helper-classes.scss";
-
-%common-props {
+%btn-common-props {
   height: 70%;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 
   border: none;
   border-radius: 5px;
@@ -11,23 +13,23 @@
   font-size: 1.5rem;
 
   cursor: pointer;
-
-  display: flex;
-  flex-direction: row;
-  align-items: center;
 }
 
+// ------ STYLES: START ------ //
+
 .account-buttons__sign-up {
-  @extend %common-props;
+  @extend %btn-common-props;
   justify-content: center;
 
   width: 30%;
+
+  margin-right: 2%;
 
   background-color: var(--grey-100);
 }
 
 .account-buttons__sign-in {
-  @extend %common-props;
+  @extend %btn-common-props;
   justify-content: space-evenly;
 
   width: 25%;
@@ -39,6 +41,10 @@
   }
 
   &__text {
-    @extend %text-overflow;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 }
+
+// ------ STYLES: START ------ //

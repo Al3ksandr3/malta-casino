@@ -16,6 +16,10 @@
   color: var(--font-color-grey-100);
   font-size: 1.5rem;
 
+  &__place {
+    justify-self: start;
+  }
+
   &__voucher {
     height: 100%;
     width: 100%;

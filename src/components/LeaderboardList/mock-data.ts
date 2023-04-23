@@ -12,7 +12,7 @@ interface ILeaderboardPrize {
 export const leaderboardPrizesList: ILeaderboardPrize[] = [
   {
     placeIndex: 1,
-    voucherAmount: "-",
+    voucherAmount: "—",
     prizeDescription: {
       description: "A კატეგორიის საგზური",
       prizeIcon: PlaneIconTransparent,
@@ -20,7 +20,7 @@ export const leaderboardPrizesList: ILeaderboardPrize[] = [
   },
   {
     placeIndex: 2,
-    voucherAmount: "-",
+    voucherAmount: "—",
     prizeDescription: {
       description: "B კატეგორიის საგზური",
       prizeIcon: TicketIconTransparent,
@@ -83,37 +83,37 @@ export const leaderboardPrizesList: ILeaderboardPrize[] = [
   },
   {
     placeIndex: 14,
-    voucherAmount: "-",
+    voucherAmount: "—",
     prizeDescription: "სპეც. ტურნირის ბილეთი",
   },
   {
     placeIndex: 15,
-    voucherAmount: "-",
+    voucherAmount: "—",
     prizeDescription: "სპეც. ტურნირის ბილეთი",
   },
   {
     placeIndex: 16,
-    voucherAmount: "-",
+    voucherAmount: "—",
     prizeDescription: "სპეც. ტურნირის ბილეთი",
   },
   {
     placeIndex: 17,
-    voucherAmount: "-",
+    voucherAmount: "—",
     prizeDescription: "სპეც. ტურნირის ბილეთი",
   },
   {
     placeIndex: 18,
-    voucherAmount: "-",
+    voucherAmount: "—",
     prizeDescription: "სპეც. ტურნირის ბილეთი",
   },
   {
     placeIndex: 19,
-    voucherAmount: "-",
+    voucherAmount: "—",
     prizeDescription: "სპეც. ტურნირის ბილეთი",
   },
   {
     placeIndex: 20,
-    voucherAmount: "-",
+    voucherAmount: "—",
     prizeDescription: "სპეც. ტურნირის ბილეთი",
   },
 ];

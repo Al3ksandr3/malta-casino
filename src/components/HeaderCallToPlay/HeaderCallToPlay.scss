@@ -4,7 +4,12 @@
   align-items: center;
 }
 
+// ------ STYLES: START ------ //
+
 .header-call-to-play {
+  @extend %flex-class;
+  justify-content: space-between;
+
   height: 5%;
   width: 100%;
 
@@ -12,30 +17,45 @@
   top: 0;
   z-index: 5;
 
-  @extend %flex-class;
-  justify-content: space-between;
-
   padding: 0 2%;
 
-  &__left-container {
-    height: 100%;
-    width: 50%;
+  background-color: transparent;
 
+  border-left: 1.5px solid transparent;
+  border-right: 1.5px solid transparent;
+  border-bottom: 3px solid transparent;
+
+  transition: background-color 0.2s linear, border 0.2s linear;
+
+  &__left-container {
     @extend %flex-class;
     justify-content: flex-start;
+
+    height: 100%;
+    width: 50%;
 
     &__brand-logo {
       height: 80%;
 
-      margin-right: 2rem;
+      margin-right: 5%;
     }
   }
 
   &__right-container {
-    height: 100%;
-    width: 50%;
-
     @extend %flex-class;
     justify-content: flex-end;
+
+    height: 100%;
+    width: 50%;
+  }
+
+  &--solid-bg {
+    background-color: var(--grey-900);
+
+    border-left: 1.5px solid var(--brand-orange-color);
+    border-right: 1.5px solid var(--brand-orange-color);
+    border-bottom: 3px solid var(--brand-orange-color);
   }
 }
+
+// ------ STYLES: END ------ //
