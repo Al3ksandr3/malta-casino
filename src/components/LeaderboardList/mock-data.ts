@@ -1,19 +1,10 @@
 import PlaneIconTransparent from "./assets/plane-icon-transparent.png";
 import TicketIconTransparent from "./assets/ticket-icon-transparent.png";
 
-import PlaneIcon from "./assets/plane-icon.png";
-import TicketIcon from "./assets/ticket-icon.png";
-import EnvelopeIcon from "./assets/envelope-icon.png";
-
 interface ILeaderboardPrize {
   placeIndex: number;
   voucherAmount: string;
   prizeDescription: string | { description: string; prizeIcon: string };
-}
-
-interface IPrizeWithOrangeLine {
-  prizeDescription: string;
-  prizeImage: string;
 }
 
 // ------ MOCK DATA: START ------ //
@@ -125,18 +116,6 @@ export const leaderboardPrizesList: ILeaderboardPrize[] = [
     voucherAmount: "-",
     prizeDescription: "სპეც. ტურნირის ბილეთი",
   },
-];
-
-export const prizesWithOrangeLineList: IPrizeWithOrangeLine[] = [
-  {
-    prizeDescription: "The Festival in Malta-ს საგზური",
-    prizeImage: PlaneIcon,
-  },
-  {
-    prizeDescription: `სპეციალური ტურნირის "Cashgame Sharks" ბილეთი, სადაც გათამაშდება The Festival in Malta-ს საგზური`,
-    prizeImage: TicketIcon,
-  },
-  { prizeDescription: "ტექნიკის მაღაზიის ვაუჩერი", prizeImage: EnvelopeIcon },
 ];
 
 // ------ MOCK DATA: END ------ //

@@ -102,7 +102,7 @@ $border-radius: 15px;
     height: 20%;
 
     .stage-info-container__header {
-      height: 15%;
+      height: 20%;
 
       font-size: 2.2rem;
     }
@@ -116,13 +116,13 @@ $border-radius: 15px;
     height: 57%;
 
     .stage-info-container__header {
-      height: 5%;
+      height: 7%;
 
       font-size: 2.2rem;
     }
 
     .stage-info-container__content {
-      height: 95%;
+      height: 93%;
 
       padding: 0 3%;
     }
@@ -135,6 +135,8 @@ $border-radius: 15px;
 
     .stage-info-container__content {
       height: 100%;
+
+      padding: 0 3%;
 
       border-radius: $border-radius;
     }

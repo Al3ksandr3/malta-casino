@@ -28,7 +28,7 @@
     padding: 3%;
   }
 
-  &---cash-games-stage-case--type-one {
+  &---leaderboard-list-case {
     @extend .grey-container;
 
     height: 27%;
@@ -64,7 +64,7 @@
     }
   }
 
-  &---cash-games-stage-case--type-two {
+  &---prizes-with-orange-line-list-case {
     @extend .grey-container;
 
     height: 16%;
