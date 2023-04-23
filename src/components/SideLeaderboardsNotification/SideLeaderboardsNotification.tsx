@@ -8,6 +8,8 @@ export default function SideLeaderboardsNotification() {
   return (
     <StageInfoContainer
       additionalCSSClass="stage-info-container---side-leaderboards-notification-case"
+      activateHeaderBlock={true}
+      activateOrangeLine={true}
       activateContentBlock={false}
     >
       <>

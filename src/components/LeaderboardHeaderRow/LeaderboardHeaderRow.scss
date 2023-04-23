@@ -1,0 +1,34 @@
+@use "sass:math";
+
+.leaderboard-header-row {
+  height: 10%;
+  width: 100%;
+
+  display: grid;
+  grid-template-rows: 100%;
+  grid-template-columns: repeat(3, math.div(100%, 3));
+
+  align-items: center;
+  justify-items: center;
+
+  padding: 0 3%;
+
+  color: var(--font-color-grey-100);
+  font-size: 1.5rem;
+
+  &__voucher {
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    &__icon {
+      height: 30%;
+
+      margin-right: 3%;
+    }
+  }
+}

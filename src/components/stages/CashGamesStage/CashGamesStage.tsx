@@ -7,6 +7,7 @@ import EnvelopeIcon from "./assets/envelope-icon.png";
 import StageInfoContainer from "../../StageInfoContainer/StageInfoContainer";
 import HoldemListHeader from "../../HoldemListHeader/HoldemListHeader";
 import GreyContainer from "../../GreyContainer/GreyContainer";
+import LeaderboardHeaderRow from "../../LeaderboardHeaderRow/LeaderboardHeaderRow";
 import PrizeDescriptionItemWithOrangeLine from "../../PrizeDescriptionItemWithOrangeLine/PrizeDescriptionItemWithOrangeLine";
 import SideLeaderboardsNotification from "../../SideLeaderboardsNotification/SideLeaderboardsNotification";
 
@@ -34,6 +35,8 @@ export default function CashGamesStage() {
     <>
       <section className="cash-games-stage">
         <StageInfoContainer
+          activateHeaderBlock={true}
+          activateOrangeLine={true}
           activateContentBlock={true}
           headerText="1 ₾ რეიკი = 1 ქულას"
           additionalCSSClass="stage-info-container---cash-games-stage-case"
@@ -41,10 +44,12 @@ export default function CashGamesStage() {
           <>
             <HoldemListHeader headerText="ჰოლდემის TOP 20 ლიდერბორდი" />
 
-            <GreyContainer
-              additionalCSSClass="grey-container---cash-games-stage-case--type-one"
-              children=""
-            />
+            <GreyContainer additionalCSSClass="grey-container---cash-games-stage-case--type-one">
+              <>
+                <LeaderboardHeaderRow />
+                <ul></ul>
+              </>
+            </GreyContainer>
 
             <GreyContainer additionalCSSClass="grey-container---cash-games-stage-case--type-two">
               <ul>
@@ -63,10 +68,12 @@ export default function CashGamesStage() {
 
             <HoldemListHeader headerText="TOP 20 ლიდერბორდი ჰოლდემში" />
 
-            <GreyContainer
-              additionalCSSClass="grey-container---cash-games-stage-case--type-one"
-              children=""
-            />
+            <GreyContainer additionalCSSClass="grey-container---cash-games-stage-case--type-one">
+              <>
+                <LeaderboardHeaderRow />
+                <ul></ul>
+              </>
+            </GreyContainer>
 
             <GreyContainer additionalCSSClass="grey-container---cash-games-stage-case--type-two">
               <ul>
@@ -92,6 +99,7 @@ export default function CashGamesStage() {
           </>
         </StageInfoContainer>
       </section>
+
       <SideLeaderboardsNotification />
     </>
   );
