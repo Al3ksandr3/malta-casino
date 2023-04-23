@@ -1,36 +1,18 @@
 import "./CashGamesStage.scss";
 
-import PlaneIcon from "./assets/plane-icon.png";
-import TicketIcon from "./assets/ticket-icon.png";
-import EnvelopeIcon from "./assets/envelope-icon.png";
-
 import StageInfoContainer from "../../StageInfoContainer/StageInfoContainer";
 import HoldemListHeader from "../../HoldemListHeader/HoldemListHeader";
 import GreyContainer from "../../GreyContainer/GreyContainer";
 import LeaderboardHeaderRow from "../../LeaderboardHeaderRow/LeaderboardHeaderRow";
+import LeaderboardListItem from "../../LeaderboardListItem/LeaderboardListItem";
 import PrizeDescriptionItemWithOrangeLine from "../../PrizeDescriptionItemWithOrangeLine/PrizeDescriptionItemWithOrangeLine";
 import SideLeaderboardsNotification from "../../SideLeaderboardsNotification/SideLeaderboardsNotification";
 
-interface IPrizeWithOrangeLine {
-  prizeDescription: string;
-  prizeImage: string;
-}
+import { leaderboardPrizesList, prizesWithOrangeLineList } from "./mock-data";
 
 // ------ COMPONENT: START ------ //
 
 export default function CashGamesStage() {
-  const prizesWithOrangeLineList: IPrizeWithOrangeLine[] = [
-    {
-      prizeDescription: "The Festival in Malta-ს საგზური",
-      prizeImage: PlaneIcon,
-    },
-    {
-      prizeDescription: `სპეციალური ტურნირის "Cashgame Sharks" ბილეთი, სადაც გათამაშდება The Festival in Malta-ს საგზური`,
-      prizeImage: TicketIcon,
-    },
-    { prizeDescription: "ტექნიკის მაღაზიის ვაუჩერი", prizeImage: EnvelopeIcon },
-  ];
-
   return (
     <>
       <section className="cash-games-stage">
@@ -47,7 +29,16 @@ export default function CashGamesStage() {
             <GreyContainer additionalCSSClass="grey-container---cash-games-stage-case--type-one">
               <>
                 <LeaderboardHeaderRow />
-                <ul></ul>
+                <ul>
+                  {leaderboardPrizesList.map((leaderboardPrize) => (
+                    <LeaderboardListItem
+                      key={leaderboardPrize.placeIndex}
+                      placeIndex={leaderboardPrize.placeIndex}
+                      voucherAmount={leaderboardPrize.voucherAmount}
+                      prizeDescription={leaderboardPrize.prizeDescription}
+                    />
+                  ))}
+                </ul>
               </>
             </GreyContainer>
 
@@ -71,7 +62,16 @@ export default function CashGamesStage() {
             <GreyContainer additionalCSSClass="grey-container---cash-games-stage-case--type-one">
               <>
                 <LeaderboardHeaderRow />
-                <ul></ul>
+                <ul>
+                  {leaderboardPrizesList.map((leaderboardPrize) => (
+                    <LeaderboardListItem
+                      key={leaderboardPrize.placeIndex}
+                      placeIndex={leaderboardPrize.placeIndex}
+                      voucherAmount={leaderboardPrize.voucherAmount}
+                      prizeDescription={leaderboardPrize.prizeDescription}
+                    />
+                  ))}
+                </ul>
               </>
             </GreyContainer>
 

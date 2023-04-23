@@ -33,12 +33,34 @@
 
     height: 27%;
 
+    padding: {
+      bottom: 3%;
+      left: 2%;
+      right: 2%;
+    }
+
     ul {
       @extend %ul-props;
 
       height: 90%;
 
+      padding: 0 2%;
+
       overflow-y: scroll;
+
+      scrollbar-width: none; // removes visible scrollbars for Firefox
+      -ms-overflow-style: none; // removes visible scrollbars for IE and Edge
+
+      &::-webkit-scrollbar {
+        // removes visible scrollbars for Chrome
+        width: 5px;
+        background-color: var(--grey-500);
+      }
+
+      &::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background-color: var(--brand-orange-color);
+      }
     }
   }
 

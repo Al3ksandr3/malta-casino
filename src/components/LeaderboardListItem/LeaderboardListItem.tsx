@@ -1,11 +1,9 @@
 import "./LeaderboardListItem.scss";
 
-import React from "react";
-
 interface LeaderboardListItemProps {
-  placeIndex: string;
+  placeIndex: number;
   voucherAmount: string;
-  prize: React.ReactNode;
+  prizeDescription: { description: string; prizeIcon: string } | string;
 }
 
 // ------ COMPONENT: START ------ //
@@ -15,12 +13,24 @@ export default function LeaderboardListItem(props: LeaderboardListItemProps) {
     <li className="leaderboard-list-item">
       <p className="leaderboard-list-item__place-index">{props.placeIndex}</p>
       <p className="leaderboard-list-item__voucher-amount">
-        {props.placeIndex}
+        {props.voucherAmount}
       </p>
-      {typeof props.prize === "string" ? (
-        <p className="leaderboard-list-item__prize"></p>
+
+      {typeof props.prizeDescription === "string" ? (
+        <p className="leaderboard-list-item__prize-description--p">
+          {props.prizeDescription}
+        </p>
       ) : (
-        props.prize
+        <span className="leaderboard-list-item__prize-description--span">
+          <img
+            className="leaderboard-list-item__prize-description--span__icon"
+            src={props.prizeDescription.prizeIcon}
+            alt="Icon representing prize for a particular place."
+          />
+          <p className="leaderboard-list-item__prize-description--span__text">
+            {props.prizeDescription.description}
+          </p>
+        </span>
       )}
     </li>
   );

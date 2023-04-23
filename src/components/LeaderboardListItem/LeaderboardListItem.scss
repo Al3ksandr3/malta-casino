@@ -1,16 +1,22 @@
 @use "sass:math";
 
 .leaderboard-list-item {
-  height: 12%;
+  height: 15%;
   width: 100%;
 
-  display: grid;
+  flex-shrink: 0;
 
+  padding: 0 2%;
+
+  margin-bottom: 1%;
+
+  display: grid;
   grid-template-columns: repeat(3, math.div(100%, 3));
   grid-template-rows: 100%;
-
   justify-items: center;
   align-items: center;
+
+  color: var(--font-color-main);
 
   border: 4px solid var(--grey-200);
   border-radius: 40px;
@@ -18,19 +24,52 @@
   background-color: var(--grey-700);
 
   &__place-index {
+    height: 3vh;
+    width: 3vh;
+
+    border-radius: 1.5vh;
+
     grid-column: 1 / 2;
     grid-row: 1 / 2;
 
     justify-self: self-start;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 1.4rem;
+
+    background-color: var(--grey-200);
   }
 
   &__voucher-amount {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
+
+    font-size: 1.5rem;
+  }
+}
+
+.leaderboard-list-item__prize-description--p {
+  font-size: 1.3rem;
+}
+
+.leaderboard-list-item__prize-description--span {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+
+  &__icon {
+    height: 50%;
   }
 
-  &__prize {
-    grid-column: 3 / 4;
-    grid-row: 1 / 2;
+  &__text {
+    font-size: 1.3rem;
   }
 }

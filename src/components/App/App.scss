@@ -7,4 +7,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  scrollbar-width: none; // removes visible scrollbars for Firefox
+  -ms-overflow-style: none; // removes visible scrollbars for IE and Edge
+
+  &::-webkit-scrollbar {
+    // removes visible scrollbars for Chrome
+    width: 0;
+    height: 0;
+  }
 }
