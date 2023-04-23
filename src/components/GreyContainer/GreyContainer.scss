@@ -28,6 +28,8 @@
     padding: 3%;
   }
 
+  // ---------------------------------------------
+
   &---leaderboard-list-case {
     @extend .grey-container;
 
@@ -62,7 +64,15 @@
         background-color: var(--brand-orange-color);
       }
     }
+
+    &--spring-series-stage {
+      @extend .grey-container---leaderboard-list-case;
+
+      height: 50%;
+    }
   }
+
+  // ---------------------------------------------
 
   &---prizes-with-orange-line-list-case {
     @extend .grey-container;
@@ -71,6 +81,12 @@
 
     ul {
       @extend %ul-props;
+    }
+
+    &--spring-series-stage {
+      @extend .grey-container---prizes-with-orange-line-list-case;
+
+      height: 29%;
     }
   }
 

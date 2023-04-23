@@ -1,7 +1,11 @@
 import "./SpringSeriesStage.scss";
 
-import SideLeaderboardsNotification from "../../SideLeaderboardsNotification/SideLeaderboardsNotification";
 import StageInfoContainer from "../../StageInfoContainer/StageInfoContainer";
+import LeaderboardList from "../../LeaderboardList/LeaderboardList";
+import PrizesWithOrangeLineList from "../../PrizesWithOrangeLineList/PrizesWithOrangeLineList";
+
+import SideLeaderboardsNotification from "../../SideLeaderboardsNotification/SideLeaderboardsNotification";
+import CoinsCollectionMechanics from "../../CoinsCollectionMechanics/CoinsCollectionMechanics";
 
 // ------ COMPONENT: START ------ //
 
@@ -26,7 +30,23 @@ export default function SpringSeriesStage() {
           additionalCSSClass="stage-info-container---spring-series-stage-case--two"
           headerText="მოხვდი TOP20 ლიდერბორდში ტურნირებზე დაგროვებული ქულებით"
         >
-          <div></div>
+          <>
+            <span className="spring-series-stage___coins-collection-mechanics-placeholder">
+              <CoinsCollectionMechanics />
+            </span>
+            <LeaderboardList additionalCSSClassForGreyContainer="spring-series-stage" />
+            <PrizesWithOrangeLineList additionalCSSClassForGreyContainer="spring-series-stage" />
+            <p className="spring-series-stage___footnote">
+              * ლიდერბორდის შედეგები განახლება{" "}
+              <a className="spring-series-stage___footnote__link" href="#">
+                პოკერის ლობიში
+              </a>
+            </p>
+            <p className="spring-series-stage___footnote">
+              * სატურნირო ლიდერბორდის ქულების დათვლაში არ მონაწილეობს ფრიროლები
+              და სატელიტები
+            </p>
+          </>
         </StageInfoContainer>
 
         <StageInfoContainer
@@ -34,13 +54,7 @@ export default function SpringSeriesStage() {
           activateOrangeLine={false}
           activateContentBlock={true}
           additionalCSSClass="stage-info-container---spring-series-stage-case--three"
-        >
-          <>
-            <h3 className="spring-series-stage___daily-tournament-banners-section__header"></h3>
-
-            <p className="spring-series-stage___daily-tournament-banners-section__footnote"></p>
-          </>
-        </StageInfoContainer>
+        ></StageInfoContainer>
       </section>
       <SideLeaderboardsNotification />
     </>

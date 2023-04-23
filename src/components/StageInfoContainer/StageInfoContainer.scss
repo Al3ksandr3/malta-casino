@@ -81,7 +81,7 @@ $border-radius: 15px;
     }
   }
 
-  //
+  // ---------------------------------------------
 
   &---side-leaderboards-notification-case {
     height: calc(var(--main-element-viewport-height) * 0.2);
@@ -96,10 +96,10 @@ $border-radius: 15px;
     }
   }
 
-  //
+  // ---------------------------------------------
 
   &---spring-series-stage-case--one {
-    height: 20%;
+    height: 22%;
 
     .stage-info-container__header {
       height: 20%;
@@ -113,7 +113,7 @@ $border-radius: 15px;
   }
 
   &---spring-series-stage-case--two {
-    height: 57%;
+    height: 53%;
 
     .stage-info-container__header {
       height: 7%;
@@ -124,12 +124,14 @@ $border-radius: 15px;
     .stage-info-container__content {
       height: 93%;
 
+      justify-content: space-evenly;
+
       padding: 0 3%;
     }
   }
 
   &---spring-series-stage-case--three {
-    height: 20%;
+    height: 22%;
 
     border-top: 5px solid var(--grey-200);
 

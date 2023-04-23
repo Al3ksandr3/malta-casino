@@ -13,16 +13,26 @@
 
   margin-bottom: calc(var(--main-element-viewport-height) * 0.04);
 
-  //   &__footer-note {
-  //     height: 2%;
-  //     width: 100%;
+  &___coins-collection-mechanics-placeholder {
+    height: 8%;
+    width: 100%;
 
-  //     color: var(--font-color-main);
-  //     font-size: 1.4rem;
-  //     text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
 
-  //     &__link {
-  //       color: var(--brand-orange-color);
-  //     }
-  //   }
+  &___footnote {
+    height: 3%;
+    width: 100%;
+
+    color: var(--font-color-main);
+    font-size: 1.4rem;
+    text-align: center;
+
+    &__link {
+      color: var(--brand-orange-color);
+    }
+  }
 }

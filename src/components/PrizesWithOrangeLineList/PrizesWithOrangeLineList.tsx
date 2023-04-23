@@ -5,11 +5,23 @@ import PrizeDescriptionItemWithOrangeLine from "../PrizeDescriptionItemWithOrang
 
 import { prizesWithOrangeLineList } from "./mock-data";
 
+interface PrizesWithOrangeLineListProps {
+  additionalCSSClassForGreyContainer?: string;
+}
+
 // ------ COMPONENT: START ------ //
 
-export default function PrizesWithOrangeLineList() {
+export default function PrizesWithOrangeLineList(
+  props: PrizesWithOrangeLineListProps
+) {
   return (
-    <GreyContainer additionalCSSClass="grey-container---prizes-with-orange-line-list-case">
+    <GreyContainer
+      additionalCSSClass={
+        props.additionalCSSClassForGreyContainer
+          ? `grey-container---prizes-with-orange-line-list-case--${props.additionalCSSClassForGreyContainer}`
+          : "grey-container---prizes-with-orange-line-list-case"
+      }
+    >
       <ul>
         {prizesWithOrangeLineList.map((prizeWithOrangeLine) => (
           <PrizeDescriptionItemWithOrangeLine

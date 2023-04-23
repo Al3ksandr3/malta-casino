@@ -6,11 +6,21 @@ import LeaderboardListItem from "../LeaderboardListItem/LeaderboardListItem";
 
 import { leaderboardPrizesList } from "./mock-data";
 
+interface LeaderboardListProps {
+  additionalCSSClassForGreyContainer?: string;
+}
+
 // ------ COMPONENT: START ------ //
 
-export default function LeaderboardList() {
+export default function LeaderboardList(props: LeaderboardListProps) {
   return (
-    <GreyContainer additionalCSSClass="grey-container---leaderboard-list-case">
+    <GreyContainer
+      additionalCSSClass={
+        props.additionalCSSClassForGreyContainer
+          ? `grey-container---leaderboard-list-case--${props.additionalCSSClassForGreyContainer}`
+          : "grey-container---leaderboard-list-case"
+      }
+    >
       <>
         <LeaderboardHeaderRow />
         <ul>
