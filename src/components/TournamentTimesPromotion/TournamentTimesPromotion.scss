@@ -1,0 +1,55 @@
+.tournament-times-promotion {
+  height: 100%;
+  width: 100%;
+
+  position: relative;
+
+  padding: 3% 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  color: var(--font-color-main);
+  font-size: 1.7rem;
+  font-weight: bold;
+
+  &__hint {
+    width: 50%;
+
+    text-align: center;
+
+    color: var(--font-color-grey);
+    font-size: 1.4rem;
+  }
+
+  &__poker-lobby-btn {
+    height: 15%;
+    width: 20%;
+
+    border: none;
+    outline: none;
+
+    border-radius: 5px;
+
+    background-color: var(--brand-orange-color);
+
+    color: var(--font-color-main);
+    font-size: 1.7rem;
+
+    cursor: pointer;
+  }
+
+  &__cards-left {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+
+  &__cards-right {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}

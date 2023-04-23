@@ -7,8 +7,6 @@
 
 $border-radius: 15px;
 
-// This component was first used in CashGamesStage component
-
 // ------ STYLES: START ------ //
 
 .stage-info-container {
@@ -99,7 +97,7 @@ $border-radius: 15px;
   // ---------------------------------------------
 
   &---spring-series-stage-case--one {
-    height: 22%;
+    height: 20%;
 
     .stage-info-container__header {
       height: 20%;
@@ -108,12 +106,12 @@ $border-radius: 15px;
     }
 
     .stage-info-container__content {
-      height: 85%;
+      height: 80%;
     }
   }
 
   &---spring-series-stage-case--two {
-    height: 53%;
+    height: 58%;
 
     .stage-info-container__header {
       height: 7%;
@@ -131,7 +129,7 @@ $border-radius: 15px;
   }
 
   &---spring-series-stage-case--three {
-    height: 22%;
+    height: 20%;
 
     border-top: 5px solid var(--grey-200);
 

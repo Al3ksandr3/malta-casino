@@ -1,11 +1,14 @@
 import "./SpringSeriesStage.scss";
 
 import StageInfoContainer from "../../StageInfoContainer/StageInfoContainer";
-import LeaderboardList from "../../LeaderboardList/LeaderboardList";
-import PrizesWithOrangeLineList from "../../PrizesWithOrangeLineList/PrizesWithOrangeLineList";
-
 import SideLeaderboardsNotification from "../../SideLeaderboardsNotification/SideLeaderboardsNotification";
+
+import TournamentTimesPromotion from "../../TournamentTimesPromotion/TournamentTimesPromotion";
+
 import CoinsCollectionMechanics from "../../CoinsCollectionMechanics/CoinsCollectionMechanics";
+import LeaderboardList from "../../LeaderboardList/LeaderboardList";
+
+import PrizesWithOrangeLineList from "../../PrizesWithOrangeLineList/PrizesWithOrangeLineList";
 
 // ------ COMPONENT: START ------ //
 
@@ -20,7 +23,7 @@ export default function SpringSeriesStage() {
           additionalCSSClass="stage-info-container---spring-series-stage-case--one"
           headerText="ტურნირები და სატელიტები"
         >
-          <div></div>
+          <TournamentTimesPromotion />
         </StageInfoContainer>
 
         <StageInfoContainer
