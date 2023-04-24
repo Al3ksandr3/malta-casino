@@ -6,9 +6,11 @@ import SideLeaderboardsNotification from "../../SideLeaderboardsNotification/Sid
 import TournamentTimesPromotion from "../../TournamentTimesPromotion/TournamentTimesPromotion";
 
 import CoinsCollectionMechanics from "../../CoinsCollectionMechanics/CoinsCollectionMechanics";
-import LeaderboardList from "../../LeaderboardList/LeaderboardList";
 
+import LeaderboardList from "../../LeaderboardList/LeaderboardList";
 import PrizesWithOrangeLineList from "../../PrizesWithOrangeLineList/PrizesWithOrangeLineList";
+
+import DailyTournamentsPromotion from "../../DailyTournamentsPromotion/DailyTournamentsPromotion";
 
 // ------ COMPONENT: START ------ //
 
@@ -57,7 +59,9 @@ export default function SpringSeriesStage() {
           activateOrangeLine={false}
           activateContentBlock={true}
           additionalCSSClass="stage-info-container---spring-series-stage-case--three"
-        ></StageInfoContainer>
+        >
+          <DailyTournamentsPromotion />
+        </StageInfoContainer>
       </section>
       <SideLeaderboardsNotification />
     </>

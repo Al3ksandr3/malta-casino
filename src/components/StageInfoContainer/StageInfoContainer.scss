@@ -111,7 +111,7 @@ $border-radius: 15px;
   }
 
   &---spring-series-stage-case--two {
-    height: 58%;
+    height: 57%;
 
     .stage-info-container__header {
       height: 7%;
@@ -129,14 +129,14 @@ $border-radius: 15px;
   }
 
   &---spring-series-stage-case--three {
-    height: 20%;
+    height: 21%;
 
     border-top: 5px solid var(--grey-200);
 
     .stage-info-container__content {
       height: 100%;
 
-      padding: 0 3%;
+      padding: 3%;
 
       border-radius: $border-radius;
     }

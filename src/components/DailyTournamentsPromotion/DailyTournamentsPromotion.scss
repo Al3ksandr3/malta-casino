@@ -1,0 +1,35 @@
+.daily-tournaments-promotion {
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  //   background-color: aquamarine;
+
+  &__header {
+    color: var(--font-color-main);
+    font-size: 2rem;
+  }
+
+  &__banners-with-ring {
+    height: 70%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__footnote {
+    width: 70%;
+
+    color: var(--font-color-grey);
+    font-size: 1.4rem;
+    text-align: center;
+  }
+}

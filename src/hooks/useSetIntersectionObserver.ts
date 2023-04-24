@@ -10,17 +10,22 @@ export function useSetIntersectionObserver(): MutableRefObject<null | HTMLSpanEl
       ".header-call-to-play"
     ) as HTMLElement;
 
-    const intersectionObserverOptions = { root: null, threshold: 0.05 };
+    const threshold = 0.99;
+
+    const intersectionObserverOptions = { root: null, threshold: threshold };
 
     const intersectionObserverCallback: IntersectionObserverCallback = (
       entries
     ) => {
       entries.forEach((entry) => {
-        if (!entry.isIntersecting && entry.intersectionRatio < 0.05) {
+        if (!entry.isIntersecting && entry.intersectionRatio < threshold) {
           headerCallToPlayElement.classList.add(
             "header-call-to-play--solid-bg"
           );
-        } else if (entry.isIntersecting && entry.intersectionRatio > 0.05) {
+        } else if (
+          entry.isIntersecting &&
+          entry.intersectionRatio > threshold
+        ) {
           headerCallToPlayElement.classList.remove(
             "header-call-to-play--solid-bg"
           );
