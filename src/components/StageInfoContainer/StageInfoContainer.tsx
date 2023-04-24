@@ -3,7 +3,7 @@ import "./StageInfoContainer.scss";
 import React from "react";
 
 interface StageInfoContainerProps {
-  headerText?: string;
+  headerText?: string | React.ReactElement;
   children?: React.ReactElement;
   additionalCSSClass?: string;
   activateHeaderBlock: boolean;
@@ -21,9 +21,7 @@ export default function StageInfoContainer(props: StageInfoContainerProps) {
   return (
     <div className={parentElementCSSClasses}>
       {props.activateHeaderBlock && (
-        <h3 className="stage-info-container__header">
-          {props.headerText || props.children}
-        </h3>
+        <h3 className="stage-info-container__header">{props.headerText}</h3>
       )}
 
       {props.activateOrangeLine && (

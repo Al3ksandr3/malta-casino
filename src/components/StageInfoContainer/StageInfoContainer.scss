@@ -142,6 +142,54 @@ $border-radius: 15px;
     }
   }
 
+  // ---------------------------------------------
+
+  &---final-stage-case--one {
+    height: 39%;
+
+    border-top: 5px solid var(--grey-200);
+
+    .stage-info-container__content {
+      height: 100%;
+
+      padding: 3%;
+
+      border-radius: $border-radius;
+    }
+  }
+
+  &---final-stage-case--two {
+    height: 30%;
+
+    .stage-info-container__header {
+      height: 13%;
+
+      font-size: 2.2rem;
+    }
+
+    .stage-info-container__content {
+      height: 87%;
+    }
+  }
+
+  &---final-stage-case--three {
+    height: 28%;
+
+    .stage-info-container__header {
+      height: 17%;
+
+      font-size: 2.2rem;
+    }
+
+    .stage-info-container__content {
+      height: 83%;
+
+      justify-content: space-evenly;
+
+      padding: 0 3%;
+    }
+  }
+
   // ------ CASES: END ------ //
 }
 
