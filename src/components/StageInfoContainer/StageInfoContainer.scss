@@ -145,7 +145,7 @@ $border-radius: 15px;
   // ---------------------------------------------
 
   &---final-stage-case--one {
-    height: 39%;
+    height: 43%;
 
     border-top: 5px solid var(--grey-200);
 
@@ -159,7 +159,7 @@ $border-radius: 15px;
   }
 
   &---final-stage-case--two {
-    height: 30%;
+    height: 27%;
 
     .stage-info-container__header {
       height: 13%;
@@ -169,6 +169,10 @@ $border-radius: 15px;
 
     .stage-info-container__content {
       height: 87%;
+
+      justify-content: space-evenly;
+
+      padding: 0 3%;
     }
   }
 

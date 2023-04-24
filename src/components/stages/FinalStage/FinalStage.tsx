@@ -5,6 +5,7 @@ import GreyContainer from "../../GreyContainer/GreyContainer";
 
 import StageInfoContainer from "../../StageInfoContainer/StageInfoContainer";
 import MysteriousKeysList from "../../MysteriousKeysList/MysteriousKeysList";
+import TravelPrizesList from "../../TravelPrizesList/TravelPrizesList";
 
 // ------ COMPONENT: START ------ //
 
@@ -24,7 +25,19 @@ export default function FinalStage() {
         activateContentBlock={true}
         additionalCSSClass="stage-info-container---final-stage-case--two"
         headerText="მოიგე საგზური 30 აპრილის ფინალურ ტურნირებზე"
-      ></StageInfoContainer>
+      >
+        <>
+          <TravelPrizesList />
+          <p className="final-stage___travel-prize-hint-one">
+            * თუ მოთამაშე მოიგებს ბეჭედს ორჯერ ან მეტჯერ, ის The Lord of the
+            Rings ტურნირზე მოხვდება ბეჭდების შესაბამისი რაოდენობის სტეკით.
+          </p>
+          <p className="final-stage___travel-prize-hint-two">
+            * ტურნირში მონაწილეობის მიღება შეუძლია ნებისმიერ მსურველს 165₾-იანი
+            ბაი-ინის გადახდით.
+          </p>
+        </>
+      </StageInfoContainer>
 
       <StageInfoContainer
         activateHeaderBlock={true}

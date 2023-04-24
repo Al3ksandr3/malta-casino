@@ -13,6 +13,15 @@
 
   margin-bottom: calc(var(--main-element-viewport-height) * 0.04);
 
+  &___travel-prize-hint-one,
+  &___travel-prize-hint-two {
+    width: 80%;
+
+    color: var(--font-color-main);
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
   &___mysterious-keys-list-header {
     height: 60%;
   }
