@@ -13,20 +13,61 @@
 
   margin-bottom: calc(var(--main-element-viewport-height) * 0.04);
 
+  // ----------------------------------------------------------
+
   &___festival-banner {
     width: 100%;
 
     border-radius: 15px;
   }
 
-  &___the-festival-in-malta-header,
-  &___the-festival-in-malta-details {
+  &___malta-poker-festival-header,
+  &___malta-poker-festival-details {
     width: 80%;
 
     color: var(--font-color-main);
     font-size: 1.4rem;
     text-align: center;
   }
+
+  &___malta-poker-festival-announcement {
+    height: 7%;
+    width: 75%;
+
+    position: relative;
+
+    border-radius: 15px;
+
+    background-color: var(--grey-200);
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    padding: 0 3% 0 4%;
+
+    &__orange-line {
+      height: 70%;
+      width: 5px;
+
+      position: absolute;
+      left: 0;
+
+      background-color: var(--brand-orange-color);
+      box-shadow: 0 3px 10px var(--brand-orange-color);
+
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+
+    &__text {
+      color: var(--font-color-main);
+      font-size: 1.7rem;
+      font-weight: bold;
+    }
+  }
+
+  // ----------------------------------------------------------
 
   &___travel-prize-hint-one,
   &___travel-prize-hint-two {
@@ -36,6 +77,8 @@
     font-size: 1.4rem;
     text-align: center;
   }
+
+  // ----------------------------------------------------------
 
   &___mysterious-keys-list-header {
     height: 60%;

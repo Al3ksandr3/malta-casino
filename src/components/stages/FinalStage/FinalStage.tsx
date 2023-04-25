@@ -13,6 +13,8 @@ import MysteriousKeysList from "../../MysteriousKeysList/MysteriousKeysList";
 export default function FinalStage() {
   return (
     <section className="final-stage">
+      {/* Container I */}
+
       <StageInfoContainer
         activateHeaderBlock={false}
         activateOrangeLine={false}
@@ -25,16 +27,24 @@ export default function FinalStage() {
             src={FestivalBanner}
             alt="Banner for the festival in Malta."
           />
-          <p className="final-stage___the-festival-in-malta-header">
+          <p className="final-stage___malta-poker-festival-header">
             გაემგზავრე THE FESTIVAL IN MALTA-ზე
           </p>
-          <p className="final-stage___the-festival-in-malta-details">
+          <p className="final-stage___malta-poker-festival-details">
             The Festival სერიების ფარგლებში, ევროპაბეთი უკვე მეორედ აძლევს
             პოკერის მოთამაშეებს დაუვიწყარი მოგზაურობის შანსს.
           </p>
+          <span className="final-stage___malta-poker-festival-announcement">
+            <span className="final-stage___malta-poker-festival-announcement__orange-line" />
+            <p className="final-stage___malta-poker-festival-announcement__text">
+              15-დან 21 მაისის ჩათვლით მალტა პოკერის ფესტივალს უმასპინძლებს
+            </p>
+          </span>
           <TravelPacks />
         </>
       </StageInfoContainer>
+
+      {/* Container II */}
 
       <StageInfoContainer
         activateHeaderBlock={true}
@@ -55,6 +65,8 @@ export default function FinalStage() {
           </p>
         </>
       </StageInfoContainer>
+
+      {/* Container III */}
 
       <StageInfoContainer
         activateHeaderBlock={true}
