@@ -23,7 +23,9 @@ export default function TravelPrizeCard(props: TravelPrizeCardProps) {
       />
       <p className="travel-prize-card__title">{props.cardTitle}</p>
       {props.cardDetails.map((cardDetail) => (
-        <p className="travel-prize-card__detail">{cardDetail}</p>
+        <p key={cardDetail} className="travel-prize-card__detail">
+          {cardDetail}
+        </p>
       ))}
     </li>
   );

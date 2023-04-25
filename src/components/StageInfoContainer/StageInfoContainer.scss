@@ -33,6 +33,8 @@ $border-radius: 15px;
     width: 100%;
 
     color: var(--font-color-main);
+
+    text-align: center;
   }
 
   &__orange-line {
@@ -191,6 +193,30 @@ $border-radius: 15px;
       justify-content: space-evenly;
 
       padding: 0 3%;
+    }
+  }
+
+  // ---------------------------------------------
+
+  &---travel-pack-case {
+    height: 100%;
+    width: 32%;
+
+    .stage-info-container__header {
+      height: 12%;
+      width: 95%;
+
+      font-size: 1.5rem;
+    }
+
+    .stage-info-container__content {
+      height: 88%;
+
+      justify-content: space-evenly;
+
+      background-color: var(--grey-600);
+
+      padding: 3%;
     }
   }
 

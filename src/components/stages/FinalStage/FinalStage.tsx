@@ -1,11 +1,12 @@
 import "./FinalStage.scss";
 
 import MysteriousKey from "./assets/mysterious-key.png";
-import GreyContainer from "../../GreyContainer/GreyContainer";
+import FestivalBanner from "./assets/festival-banner.png";
 
 import StageInfoContainer from "../../StageInfoContainer/StageInfoContainer";
-import MysteriousKeysList from "../../MysteriousKeysList/MysteriousKeysList";
+import TravelPacks from "../../TravelPacks/TravelPacks";
 import TravelPrizesList from "../../TravelPrizesList/TravelPrizesList";
+import MysteriousKeysList from "../../MysteriousKeysList/MysteriousKeysList";
 
 // ------ COMPONENT: START ------ //
 
@@ -17,7 +18,23 @@ export default function FinalStage() {
         activateOrangeLine={false}
         activateContentBlock={true}
         additionalCSSClass="stage-info-container---final-stage-case--one"
-      ></StageInfoContainer>
+      >
+        <>
+          <img
+            className="final-stage___festival-banner"
+            src={FestivalBanner}
+            alt="Banner for the festival in Malta."
+          />
+          <p className="final-stage___the-festival-in-malta-header">
+            გაემგზავრე THE FESTIVAL IN MALTA-ზე
+          </p>
+          <p className="final-stage___the-festival-in-malta-details">
+            The Festival სერიების ფარგლებში, ევროპაბეთი უკვე მეორედ აძლევს
+            პოკერის მოთამაშეებს დაუვიწყარი მოგზაურობის შანსს.
+          </p>
+          <TravelPacks />
+        </>
+      </StageInfoContainer>
 
       <StageInfoContainer
         activateHeaderBlock={true}
