@@ -5,24 +5,26 @@
   justify-content: center;
 }
 
+// ------ STYLES: START ------ //
+
 .slot-dates {
+  @extend %flex-class;
+
   height: 70%;
   width: 60%;
-
-  @extend %flex-class;
 
   padding: 5px;
   border-radius: 20px;
 
   color: var(--font-color-main);
 
-  background-color: var(--slot-badge-main-background);
+  background-color: var(--grey-750);
 
   &__header {
+    @extend %flex-class;
+
     height: 100%;
     width: 35%;
-
-    @extend %flex-class;
 
     border-radius: 20px;
 
@@ -32,11 +34,13 @@
   }
 
   &__dates {
+    @extend %flex-class;
+
     height: 100%;
     width: 65%;
-
-    @extend %flex-class;
 
     font-size: 1.4rem;
   }
 }
+
+// ------ STYLES: END ------ //

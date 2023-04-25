@@ -21,9 +21,11 @@
 
   background-color: transparent;
 
-  border-left: 1.5px solid transparent;
-  border-right: 1.5px solid transparent;
-  border-bottom: 3px solid transparent;
+  border: {
+    left: 1.5px solid transparent;
+    right: 1.5px solid transparent;
+    bottom: 3px solid transparent;
+  }
 
   transition: background-color 0.2s linear, border 0.2s linear;
 
@@ -52,9 +54,11 @@
   &--solid-bg {
     background-color: var(--grey-900);
 
-    border-left: 1.5px solid var(--brand-orange-color);
-    border-right: 1.5px solid var(--brand-orange-color);
-    border-bottom: 3px solid var(--brand-orange-color);
+    border: {
+      left: 1.5px solid var(--brand-orange-color);
+      right: 1.5px solid var(--brand-orange-color);
+      bottom: 3px solid var(--brand-orange-color);
+    }
   }
 }
 

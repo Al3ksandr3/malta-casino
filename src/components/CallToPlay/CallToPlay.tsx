@@ -1,5 +1,6 @@
-import { getClickHandler } from "../../helpers/helper-functions";
 import "./CallToPlay.scss";
+
+import { getClickHandler } from "../../helpers/helper-functions";
 
 // ------ COMPONENT: START ------ //
 

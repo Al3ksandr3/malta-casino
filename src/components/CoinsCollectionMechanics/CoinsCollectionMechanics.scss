@@ -1,3 +1,5 @@
+// ------ STYLES: START ------ //
+
 .coins-collection-mechanics {
   height: 4vh;
   width: 40%;
@@ -20,6 +22,9 @@
     color: var(--font-color-main);
     font-size: 1.5rem;
     text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   &__arrow-icon {
@@ -46,3 +51,5 @@
     }
   }
 }
+
+// ------ STYLES: END ------ //

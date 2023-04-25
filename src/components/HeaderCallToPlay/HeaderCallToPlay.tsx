@@ -14,7 +14,7 @@ export default function HeaderCallToPlay() {
         <img
           className="header-call-to-play__left-container__brand-logo"
           src={BrandLogo}
-          alt="Logo of the Europebet."
+          alt="Logo of Europebet."
         />
         <SlotDates />
       </span>

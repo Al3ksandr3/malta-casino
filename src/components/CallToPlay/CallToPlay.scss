@@ -1,3 +1,5 @@
+// ------ STYLES: START ------ //
+
 .call-to-play {
   height: 7%;
   width: 100%;
@@ -27,11 +29,13 @@
     font-size: 1.6rem;
 
     border: none;
-    outline: none;
     border-radius: 5px;
+    outline: none;
 
     background-color: var(--brand-orange-color);
 
     cursor: pointer;
   }
 }
+
+// ------ STYLES: END ------ //

@@ -1,4 +1,4 @@
-%btn-common-props {
+%common-button-properties {
   height: 70%;
 
   display: flex;
@@ -18,7 +18,8 @@
 // ------ STYLES: START ------ //
 
 .account-buttons__sign-up {
-  @extend %btn-common-props;
+  @extend %common-button-properties;
+
   justify-content: center;
 
   width: 30%;
@@ -29,7 +30,8 @@
 }
 
 .account-buttons__sign-in {
-  @extend %btn-common-props;
+  @extend %common-button-properties;
+
   justify-content: space-evenly;
 
   width: 25%;

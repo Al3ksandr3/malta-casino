@@ -1,7 +1,5 @@
 import "./Main.scss";
 
-import { useState } from "react";
-
 import StagesList from "../StagesList/StagesList";
 
 import CashGamesStage from "../stages/CashGamesStage/CashGamesStage";
@@ -10,6 +8,8 @@ import FinalStage from "../stages/FinalStage/FinalStage";
 
 import RulesAndConditionsSection from "../RulesAndConditionsSection/RulesAndConditionsSection";
 import SimilarPromotionsSection from "../SimilarPromotionsSection/SimilarPromotionsSection";
+
+import { useState } from "react";
 
 // ------ COMPONENT: START ------ //
 

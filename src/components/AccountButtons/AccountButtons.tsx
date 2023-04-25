@@ -16,7 +16,7 @@ export default function AccountButtons() {
         <img
           className="account-buttons__sign-in__icon"
           src={UserIcon}
-          alt="Icon representing general user."
+          alt="Icon representing user of the website."
         />
         <p className="account-buttons__sign-in__text">შესვლა</p>
       </button>

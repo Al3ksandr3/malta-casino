@@ -1,8 +1,8 @@
 import "./CoinsCollectionMechanics.scss";
 
-import { getClickHandler } from "../../helpers/helper-functions";
-
 import ArrowDownIcon from "./assets/arrow-down-icon.svg";
+
+import { getClickHandler } from "../../helpers/helper-functions";
 
 // ------ COMPONENT: START ------ //
 
