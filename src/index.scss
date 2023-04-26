@@ -1,6 +1,10 @@
 :root {
   font-size: 10px;
 
+  --border-radius-type-one: 5px;
+  --border-radius-type-two: 10px;
+  --border-radius-type-three: 15px;
+
   --font-color-main: white; // Components: AccountsButton, CallToPlay, TournamentAnnouncement, StageInfoContainer, SlotDates, SectionHeader, RulesAndConditionsItem, CoinsCollectionMechanics, BannerWithRing, DailyTournamentsPromotion, StageSectionHeader, TravelPrizeCard, TournamentTimesPromotion, PrizeDescriptionItemWithOrangeLine, SideLeaderboardsNotification, TravelPackItem, MysteriousKeysListItem, StageInfoContainer, HoldemListHeader, LeaderboardListItem, CashGamesStage, FinalStage, SpringSeriesStage
   --font-color-grey: #e8e8e8; // Components: TournamentAnnouncement, DailyTournamentsPromotion
 
@@ -43,6 +47,9 @@ body,
 @media screen and (max-width: 1100px) {
   :root {
     font-size: 10px;
+    --border-radius-type-one: 5px;
+    --border-radius-type-two: 10px;
+    --border-radius-type-three: 15px;
   }
 }
 
@@ -55,6 +62,9 @@ body,
 @media screen and (max-width: 800px) {
   :root {
     font-size: 8px;
+    --border-radius-type-one: 4px;
+    --border-radius-type-two: 8px;
+    --border-radius-type-three: 12px;
   }
 }
 
@@ -67,6 +77,9 @@ body,
 @media screen and (max-width: 600px) {
   :root {
     font-size: 7px;
+    --border-radius-type-one: 3px;
+    --border-radius-type-two: 7px;
+    --border-radius-type-three: 10px;
   }
 }
 
@@ -79,5 +92,8 @@ body,
 @media screen and (max-width: 400px) {
   :root {
     font-size: 6px;
+    --border-radius-type-one: 2px;
+    --border-radius-type-two: 5px;
+    --border-radius-type-three: 7px;
   }
 }

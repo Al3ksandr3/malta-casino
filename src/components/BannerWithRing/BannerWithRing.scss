@@ -97,9 +97,9 @@
     .banner-with-ring__tournament-date-wrapper {
       background-color: #f1c223;
 
-      border-top-left-radius: 15px;
-      border-top-right-radius: 15px;
-      border-bottom-left-radius: 15px;
+      border-top-left-radius: var(--border-radius-type-three);
+      border-top-right-radius: var(--border-radius-type-three);
+      border-bottom-left-radius: var(--border-radius-type-three);
     }
 
     .banner-with-ring__tournament-date-wrapper__date {
@@ -116,9 +116,9 @@
     .banner-with-ring__tournament-date-wrapper {
       background-color: #d7c860;
 
-      border-top-left-radius: 15px;
-      border-top-right-radius: 15px;
-      border-bottom-left-radius: 15px;
+      border-top-left-radius: var(--border-radius-type-three);
+      border-top-right-radius: var(--border-radius-type-three);
+      border-bottom-left-radius: var(--border-radius-type-three);
     }
 
     .banner-with-ring__tournament-date-wrapper__date {

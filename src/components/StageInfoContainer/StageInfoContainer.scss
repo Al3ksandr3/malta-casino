@@ -21,7 +21,7 @@
     bottom: 5px solid var(--grey-200);
   }
 
-  border-radius: 15px;
+  border-radius: var(--border-radius-type-three);
 
   background-color: var(--grey-200);
 
@@ -45,8 +45,8 @@
     background-color: var(--brand-orange-color);
     box-shadow: 0 3px 10px var(--brand-orange-color);
 
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: var(--border-radius-type-two);
+    border-bottom-right-radius: var(--border-radius-type-two);
   }
 
   &__content {
@@ -57,8 +57,8 @@
 
     background-color: var(--grey-900);
 
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: var(--border-radius-type-three);
+    border-bottom-right-radius: var(--border-radius-type-three);
   }
 
   // ------ CASES: START ------ //
@@ -138,7 +138,7 @@
 
       padding: 3%;
 
-      border-radius: 15px;
+      border-radius: var(--border-radius-type-three);
     }
   }
 
@@ -154,7 +154,7 @@
 
       padding: 3%;
 
-      border-radius: 15px;
+      border-radius: var(--border-radius-type-three);
     }
   }
 

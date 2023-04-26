@@ -13,7 +13,7 @@
 
   position: relative;
 
-  border-radius: 15px;
+  border-radius: var(--border-radius-type-three);
 
   padding: 1% 4%;
 
@@ -32,8 +32,8 @@
     background-color: var(--brand-orange-color);
     box-shadow: 0 3px 10px var(--brand-orange-color);
 
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-top-right-radius: var(--border-radius-type-two);
+    border-bottom-right-radius: var(--border-radius-type-two);
   }
 
   &__prize-image-wrapper {
@@ -49,14 +49,14 @@
 
     background-color: var(--grey-850);
 
-    border-radius: 15px;
+    border-radius: var(--border-radius-type-three);
 
     margin-right: 3%;
 
     &__prize-image {
       height: 80%;
 
-      border-radius: 15px;
+      border-radius: var(--border-radius-type-three);
     }
   }
 
