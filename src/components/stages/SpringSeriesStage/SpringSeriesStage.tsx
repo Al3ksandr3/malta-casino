@@ -18,6 +18,8 @@ export default function SpringSeriesStage() {
   return (
     <>
       <section className="spring-series-stage">
+        {/* Container I */}
+
         <StageInfoContainer
           activateHeaderBlock={true}
           activateOrangeLine={true}
@@ -27,6 +29,8 @@ export default function SpringSeriesStage() {
         >
           <TournamentTimesPromotion />
         </StageInfoContainer>
+
+        {/* Container II */}
 
         <StageInfoContainer
           activateHeaderBlock={true}
@@ -53,6 +57,8 @@ export default function SpringSeriesStage() {
             </p>
           </>
         </StageInfoContainer>
+
+        {/* Container III */}
 
         <StageInfoContainer
           activateHeaderBlock={false}
