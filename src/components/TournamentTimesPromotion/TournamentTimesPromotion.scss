@@ -44,12 +44,14 @@
   }
 
   &__cards-left {
+    height: 50%;
     position: absolute;
     left: 0;
     bottom: 0;
   }
 
   &__cards-right {
+    height: 50%;
     position: absolute;
     right: 0;
     bottom: 0;
