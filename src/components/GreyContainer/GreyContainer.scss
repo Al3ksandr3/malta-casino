@@ -1,5 +1,3 @@
-// This component was first used in CashGamesStage component
-
 // ------ STYLES: START ------ //
 
 .grey-container {
@@ -16,7 +14,7 @@
 
   // ------ CASES: START ------ //
 
-  %ul-props {
+  %ul-properties {
     height: 100%;
     width: 100%;
 
@@ -28,7 +26,7 @@
     padding: 3%;
   }
 
-  // ---------------------------------------------
+  // ----------------------------------------------------------
 
   &---leaderboard-list-case {
     @extend .grey-container;
@@ -42,7 +40,7 @@
     }
 
     ul {
-      @extend %ul-props;
+      @extend %ul-properties;
 
       height: 90%;
 
@@ -72,7 +70,7 @@
     }
   }
 
-  // ---------------------------------------------
+  // ----------------------------------------------------------
 
   &---prizes-with-orange-line-list-case {
     @extend .grey-container;
@@ -80,7 +78,7 @@
     height: 16%;
 
     ul {
-      @extend %ul-props;
+      @extend %ul-properties;
     }
 
     &--spring-series-stage {
@@ -90,7 +88,7 @@
     }
   }
 
-  // ---------------------------------------------
+  // ----------------------------------------------------------
 
   &---mysterious-keys-list-case {
     @extend .grey-container;
@@ -100,7 +98,7 @@
     padding: 2%;
 
     ul {
-      @extend %ul-props;
+      @extend %ul-properties;
 
       height: 100%;
 

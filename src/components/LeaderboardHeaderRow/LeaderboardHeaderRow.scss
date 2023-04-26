@@ -1,5 +1,7 @@
 @use "sass:math";
 
+// ------ STYLES: START ------ //
+
 .leaderboard-header-row {
   height: 10%;
   width: 100%;
@@ -13,7 +15,7 @@
 
   padding: 0 3%;
 
-  color: var(--font-color-grey-100);
+  color: var(--grey-90);
   font-size: 1.5rem;
 
   &__place {
@@ -36,3 +38,5 @@
     }
   }
 }
+
+// ------ STYLES: END ------ //

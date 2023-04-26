@@ -5,6 +5,10 @@
 
   font-size: 1.8rem;
   color: var(--font-color-main);
+  text-align: start;
+  white-space: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
 
   margin-bottom: calc(var(--main-element-viewport-height) * 0.04);
 

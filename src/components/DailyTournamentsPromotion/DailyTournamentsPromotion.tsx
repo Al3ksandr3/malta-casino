@@ -1,8 +1,8 @@
 import "./DailyTournamentsPromotion.scss";
 
-import { dailyTournamentsList } from "./mock-data";
-
 import BannerWithRing from "../BannerWithRing/BannerWithRing";
+
+import { dailyTournamentsList } from "./mock-data";
 
 // ------ COMPONENT: START ------ //
 
@@ -19,7 +19,8 @@ export default function DailyTournamentsPromotion() {
           ) {
             return (
               <BannerWithRing
-                additionalCSSClass="banner-with-ring---daily-tournaments-promotion-case--one"
+                key={dailyTournamentData.tournamentName}
+                additionalCSSClass="banner-with-ring---daily-tournaments-promotion-case--type-one"
                 {...dailyTournamentData}
               />
             );
@@ -27,7 +28,8 @@ export default function DailyTournamentsPromotion() {
 
           return (
             <BannerWithRing
-              additionalCSSClass="banner-with-ring---daily-tournaments-promotion-case--two"
+              key={dailyTournamentData.tournamentName}
+              additionalCSSClass="banner-with-ring---daily-tournaments-promotion-case--type-two"
               {...dailyTournamentData}
             />
           );

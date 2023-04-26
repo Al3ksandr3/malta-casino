@@ -1,3 +1,5 @@
+// ------ STYLES: START ------ //
+
 .daily-tournaments-promotion {
   height: 100%;
   width: 100%;
@@ -8,8 +10,11 @@
   align-items: center;
 
   &__header {
+    width: 100%;
+
     color: var(--font-color-main);
     font-size: 2rem;
+    text-align: center;
   }
 
   &__banners-with-ring {
@@ -31,3 +36,5 @@
     text-align: center;
   }
 }
+
+// ------ STYLES: END ------ //

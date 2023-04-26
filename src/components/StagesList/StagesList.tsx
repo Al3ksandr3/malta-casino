@@ -1,8 +1,8 @@
 import "./StagesList.scss";
 
-import React from "react";
-
 import StagesListItem from "../StagesListItem/StagesListItem";
+
+import React from "react";
 
 interface StagesListProps {
   clickHandler: React.MouseEventHandler;

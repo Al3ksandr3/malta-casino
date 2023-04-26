@@ -1,7 +1,7 @@
 import "./PrizesWithOrangeLineList.scss";
 
-import GreyContainer from "../GreyContainer/GreyContainer";
 import PrizeDescriptionItemWithOrangeLine from "../PrizeDescriptionItemWithOrangeLine/PrizeDescriptionItemWithOrangeLine";
+import GreyContainer from "../GreyContainer/GreyContainer";
 
 import { prizesWithOrangeLineList } from "./mock-data";
 

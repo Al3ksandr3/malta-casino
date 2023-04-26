@@ -5,17 +5,16 @@ import { useSetIntersectionObserver } from "../../hooks/useSetIntersectionObserv
 // ------ COMPONENT: START ------ //
 
 export default function TournamentAnnouncement() {
-  const headerContent: string =
-    "მოიპოვე მრავალფეროვანი პრიზები და 10 საგზურიდან ერთ-ერთი";
-
-  const detailsContent: string = "მოხვდი პოკერის ფესტივალზე მალტაში";
-
   const ref = useSetIntersectionObserver();
 
   return (
     <span className="tournament-announcement" ref={ref}>
-      <h1 className="tournament-announcement__header">{headerContent}</h1>
-      <h2 className="tournament-announcement__details">{detailsContent}</h2>
+      <h1 className="tournament-announcement__header">
+        მოიპოვე მრავალფეროვანი პრიზები და 10 საგზურიდან ერთ-ერთი
+      </h1>
+      <h2 className="tournament-announcement__details">
+        მოხვდი პოკერის ფესტივალზე მალტაში
+      </h2>
     </span>
   );
 }

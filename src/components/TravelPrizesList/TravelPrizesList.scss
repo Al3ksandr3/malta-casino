@@ -1,20 +1,26 @@
+%flex-class {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+// ------ STYLES: START ------ //
+
 .travel-prizes-list {
+  @extend %flex-class;
+  flex-direction: row;
+
   height: 70%;
   width: 100%;
 
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-
   &__left-list,
   &__right-list {
+    @extend %flex-class;
+    flex-direction: column;
+
     height: 100%;
     width: 48%;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
   }
 }
+
+// ------ STYLES: END ------ //

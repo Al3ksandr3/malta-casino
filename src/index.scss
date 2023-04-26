@@ -1,27 +1,28 @@
 :root {
   font-size: 10px;
 
-  --font-color-main: white; // Components: AccountsButton, CallToPlay, TournamentAnnouncement, StageInfoContainer, SlotDates, SectionHeader, RulesAndConditionsItem, CoinsCollectionMechanics
-  --font-color-grey: #e8e8e8; // Components: TournamentAnnouncement
+  --font-color-main: white; // Components: AccountsButton, CallToPlay, TournamentAnnouncement, StageInfoContainer, SlotDates, SectionHeader, RulesAndConditionsItem, CoinsCollectionMechanics, BannerWithRing, DailyTournamentsPromotion, StageSectionHeader, TravelPrizeCard, TournamentTimesPromotion, PrizeDescriptionItemWithOrangeLine, SideLeaderboardsNotification, TravelPackItem, MysteriousKeysListItem, StageInfoContainer, HoldemListHeader, LeaderboardListItem
+  --font-color-grey: #e8e8e8; // Components: TournamentAnnouncement, DailyTournamentsPromotion
 
   --font-color-grey-100: #757575;
 
-  --brand-orange-color: #ef5a21; // Components: AccountsButton, CallToPlay, StagesListItem, StageInfoContainer, CoinsCollectionMechanics, HeaderCallToPlay
+  --brand-orange-color: #ef5a21; // Components: AccountsButton, CallToPlay, StagesListItem, StageInfoContainer, CoinsCollectionMechanics, HeaderCallToPlay, TimeWidget, PrizeDescriptionItemWithOrangeLine, StageInfoContainer, GreyContainer
 
-  --grey-950: #1c1d1e; // Components: App
-  --grey-900: #171718; // Components: CallToPlay, StageInfoContainer, HeaderCallToPlay
-  --grey-850: #232526; // Components:
-  --grey-800: #1f2223; // Components:
+  --grey-950: #1c1d1e; // Components: App, TravelPackItem
+  --grey-900: #171718; // Components: CallToPlay, StageInfoContainer, HeaderCallToPlay, StageInfoContainer
+  --grey-850: #232526; // Components: PrizeDescriptionItemWithOrangeLine
+  --grey-800: #1f2223; // Components: PrizeDescriptionItemWithOrangeLine
   --grey-750: #242a2b; // Components: SlotDates
-  --grey-700: #1e2122; // Components: LiderboardListItem, CoinsCollectionMechanics
-  --grey-600: #25292b; // Components: GreyContainer, RulesAndConditionsItem
-  --grey-500: #282d2f; // Components:
-  --grey-200: #2c3234; // Components: StagesList, StageInfoContainer, LiderboardListItem, CoinsCollectionMechanics
+  --grey-700: #1e2122; // Components: LiderboardListItem, CoinsCollectionMechanics, TravelPrizeCard, MysteriousKeysListItem, LeaderboardListItem
+  --grey-600: #25292b; // Components: GreyContainer, RulesAndConditionsItem, StageInfoContainer, GreyContainer
+  --grey-500: #282d2f; // Components: GreyContainer
+  --grey-200: #2c3234; // Components: StagesList, StageInfoContainer, LiderboardListItem, CoinsCollectionMechanics, MysteriousKeysListItem, StageInfoContainer, LeaderboardListItem
   --grey-100: #44494b; // Components: AccountsButton, SlotDates
+  --grey-90: #757575; // Components: LeaderboardHeaderRow
+  --grey-50: #d5d6d6; // Components: StagesList
+  --grey-20: #e8e8e8; // Components: TournamentAnnouncement, TournamentTimesPromotion
 
-  --stages-list-font-color: #d5d6d6; // Components: StagesList
-
-  --main-element-viewport-height: 57vh; // Components: StagesList, StageInfoContainer, CashGamesStage
+  --main-element-viewport-height: 57vh; // Components: StagesList, StageInfoContainer, CashGamesStage, SimilarPromotionsSection, StageSectionHeader, RulesAndConditionsSection, StageInfoContainer
   --main-element-bottom-padding: 10%;
 }
 

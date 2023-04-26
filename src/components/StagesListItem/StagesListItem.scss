@@ -1,5 +1,14 @@
 @use "sass:math";
 
+%overflowing-text-styles {
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+// ------ STYLES: START ------ //
+
 .stages-list-item {
   height: 100%;
   width: math.div(100%, 3);
@@ -24,18 +33,26 @@
   }
 
   &__stage-date {
-    font-size: 1.3rem;
+    @extend %overflowing-text-styles;
 
-    margin-bottom: 5px;
+    width: 100%;
+
+    font-size: 1.5rem;
+
+    margin-bottom: 2%;
 
     &--selected {
       @extend .stages-list-item__stage-date;
 
-      font-size: 1.5rem;
+      font-size: 1.6rem;
     }
   }
 
   &__stage-description {
+    @extend %overflowing-text-styles;
+
+    width: 100%;
+
     font-size: 1.6rem;
     font-weight: bold;
 
@@ -46,3 +63,5 @@
     }
   }
 }
+
+// ------ STYLES: END ------ //

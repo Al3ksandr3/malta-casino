@@ -1,3 +1,5 @@
+// ------ STYLES: START ------ //
+
 .time-widget {
   height: 4vh;
   width: 30%;
@@ -37,5 +39,10 @@
     width: 80%;
 
     text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 }
+
+// ------ STYLES: END ------ //

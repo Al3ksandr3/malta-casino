@@ -1,3 +1,5 @@
+// ------ STYLES: START ------ //
+
 .stages-list {
   height: calc(var(--main-element-viewport-height) * 0.17);
   width: 90%;
@@ -15,5 +17,7 @@
 
   border-radius: 15px;
 
-  color: var(--stages-list-font-color);
+  color: var(--grey-50);
 }
+
+// ------ STYLES: END ------ //

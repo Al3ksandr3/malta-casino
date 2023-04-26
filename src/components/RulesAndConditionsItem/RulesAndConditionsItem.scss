@@ -1,4 +1,4 @@
-@import "../../helpers/helper-classes.scss";
+// ------ STYLES: START ------ //
 
 .rules-and-conditions-item {
   height: 30%;
@@ -21,8 +21,6 @@
   background-color: var(--grey-600);
 
   &__content {
-    @extend %text-overflow;
-
     width: 95%;
   }
 
@@ -32,3 +30,5 @@
     cursor: pointer;
   }
 }
+
+// ------ STYLES: END ------ //
