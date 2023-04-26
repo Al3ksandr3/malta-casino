@@ -13,7 +13,7 @@
   @extend %flex-class;
   justify-content: space-between;
 
-  height: 5%;
+  height: calc(var(--base-viewport-dimension) * 0.055);
   width: 100%;
 
   position: fixed;
@@ -37,7 +37,7 @@
     justify-content: flex-start;
 
     height: 100%;
-    width: 50%;
+    width: 60%;
 
     &__brand-logo {
       height: 80%;
@@ -51,7 +51,7 @@
     justify-content: flex-end;
 
     height: 100%;
-    width: 50%;
+    width: 40%;
   }
 
   &--solid-bg {

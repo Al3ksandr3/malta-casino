@@ -29,6 +29,8 @@
   }
 
   &__icon {
+    height: calc(var(--base-viewport-dimension) * 0.04);
+
     position: absolute;
     top: 0;
     right: 7%;

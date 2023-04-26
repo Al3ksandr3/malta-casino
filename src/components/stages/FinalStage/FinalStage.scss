@@ -24,7 +24,7 @@
   &___festival-banner {
     width: 100%;
 
-    border-radius: var(--border-radius-type-three);
+    border-radius: var(--border-radius-type-two);
   }
 
   &___malta-poker-festival-header,
@@ -88,13 +88,17 @@
   // ----------------------------------------------------------
 
   &___mysterious-keys-list-header {
-    height: 60%;
+    height: 50%;
+    max-width: 90%;
   }
 
   &___mysterious-keys-list-description {
+    width: 90%;
+
     color: var(--font-color-main);
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: bold;
+    text-align: center;
   }
 }
 
