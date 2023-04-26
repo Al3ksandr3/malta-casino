@@ -28,7 +28,7 @@
 
   &__poker-lobby-btn {
     height: 15%;
-    width: 20%;
+    width: 25%;
 
     border: none;
     outline: none;
@@ -41,6 +41,8 @@
     font-size: 1.7rem;
 
     cursor: pointer;
+
+    z-index: 5;
   }
 
   &__cards-left {

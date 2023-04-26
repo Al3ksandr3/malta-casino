@@ -139,12 +139,16 @@
 
     border-top: var(--border-width) solid var(--grey-200);
 
+    flex-shrink: 0;
+
     .stage-info-container__content {
       height: 100%;
 
       padding: 3%;
 
       border-radius: var(--border-radius-type-three);
+
+      flex-shrink: 0;
     }
   }
 
@@ -255,6 +259,23 @@
     --orange-line-height: 3px;
     --orange-line-shadow-vertical-offset: 2px;
     --orange-line-shadow-spread: 5px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .stage-info-container {
+    // 20 57 21
+    &---spring-series-stage-case--one {
+      height: 20%;
+    }
+
+    &---spring-series-stage-case--one {
+      height: 50%;
+    }
+
+    &---spring-series-stage-case--three {
+      height: 25%;
+    }
   }
 }
 

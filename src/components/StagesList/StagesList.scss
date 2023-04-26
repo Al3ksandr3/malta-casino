@@ -1,7 +1,7 @@
 // ------ STYLES: START ------ //
 
 .stages-list {
-  height: calc(var(--main-element-viewport-height) * 0.17);
+  height: calc(var(--base-viewport-dimension) * 0.57 * 0.17);
   width: 90%;
 
   flex-shrink: 0;
