@@ -28,6 +28,8 @@
 
   --main-element-viewport-height: 57vh; // Components: StagesList, StageInfoContainer, CashGamesStage, SimilarPromotionsSection, StageSectionHeader, RulesAndConditionsSection, StageInfoContainer, CashGamesStage, FinalStage, SpringSeriesStage
   --main-element-bottom-padding: 10%;
+
+  --base-viewport-dimension: 100vh;
 }
 
 * {
@@ -42,6 +44,14 @@ body,
 #root {
   height: 100%;
   width: 100%;
+}
+
+// ------ MEDIA QUERIEIS: START ------ //
+
+@media screen and (max-width: 1400px) and (orientation: landscape) {
+  :root {
+    --base-viewport-dimension: 90vw;
+  }
 }
 
 @media screen and (max-width: 1100px) {
@@ -97,3 +107,5 @@ body,
     --border-radius-type-three: 7px;
   }
 }
+
+// ------ MEDIA QUERIEIS: END ------ //

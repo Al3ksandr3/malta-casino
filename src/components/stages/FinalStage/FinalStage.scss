@@ -1,7 +1,11 @@
 // ------ STYLES: START ------ //
 
 .final-stage {
-  height: calc(var(--main-element-viewport-height) * 3.7);
+  --orange-line-width: 5px;
+  --orange-line-shadow-vertical-offset: 3px;
+  --orange-line-shadow-spread: 10px;
+
+  height: calc(var(--base-viewport-dimension) * 0.57 * 3.7);
   width: 100%;
 
   flex-shrink: 0;
@@ -13,14 +17,14 @@
 
   padding: 0 5%;
 
-  margin-bottom: calc(var(--main-element-viewport-height) * 0.04);
+  margin-bottom: calc(var(--base-viewport-dimension) * 0.57 * 0.04);
 
   // ----------------------------------------------------------
 
   &___festival-banner {
     width: 100%;
 
-    border-radius: 15px;
+    border-radius: var(--border-radius-type-three);
   }
 
   &___malta-poker-festival-header,
@@ -38,7 +42,7 @@
 
     position: relative;
 
-    border-radius: 15px;
+    border-radius: var(--border-radius-type-three);
 
     background-color: var(--grey-200);
 
@@ -50,16 +54,17 @@
 
     &__orange-line {
       height: 70%;
-      width: 5px;
+      width: var(--orange-line-width);
 
       position: absolute;
       left: 0;
 
       background-color: var(--brand-orange-color);
-      box-shadow: 0 3px 10px var(--brand-orange-color);
+      box-shadow: 0 var(--orange-line-shadow-vertical-offset)
+        var(--orange-line-shadow-spread) var(--brand-orange-color);
 
-      border-top-right-radius: 10px;
-      border-bottom-right-radius: 10px;
+      border-top-right-radius: var(--border-radius-type-two);
+      border-bottom-right-radius: var(--border-radius-type-two);
     }
 
     &__text {
@@ -94,3 +99,39 @@
 }
 
 // ------ STYLES: END ------ //
+
+// ------ MEDIA QUERIES: START ------ //
+
+@media screen and (max-width: 1100px) {
+  .final-stage {
+    --orange-line-width: 5px;
+    --orange-line-shadow-vertical-offset: 3px;
+    --orange-line-shadow-spread: 10px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .final-stage {
+    --orange-line-width: 4px;
+    --orange-line-shadow-vertical-offset: 2.5px;
+    --orange-line-shadow-spread: 7px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .final-stage {
+    --orange-line-width: 3px;
+    --orange-line-shadow-vertical-offset: 2px;
+    --orange-line-shadow-spread: 5px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .final-stage {
+    --orange-line-width: 2px;
+    --orange-line-shadow-vertical-offset: 1.5px;
+    --orange-line-shadow-spread: 3px;
+  }
+}
+
+// ------ MEDIA QUERIES: END ------ //

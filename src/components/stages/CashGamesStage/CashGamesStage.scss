@@ -1,7 +1,7 @@
 // ------ STYLES: START ------ //
 
 .cash-games-stage {
-  height: calc(var(--main-element-viewport-height) * 3);
+  height: calc(var(--base-viewport-dimension) * 0.57 * 3);
   width: 100%;
 
   flex-shrink: 0;
@@ -13,7 +13,7 @@
 
   padding: 0 5%;
 
-  margin-bottom: calc(var(--main-element-viewport-height) * 0.04);
+  margin-bottom: calc(var(--base-viewport-dimension) * 0.57 * 0.04);
 
   &___footnote {
     height: 2%;

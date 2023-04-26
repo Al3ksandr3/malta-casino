@@ -88,10 +88,10 @@
   // ----------------------------------------------------------
 
   &---side-leaderboards-notification-case {
-    height: calc(var(--main-element-viewport-height) * 0.2);
+    height: calc(var(--base-viewport-dimension) * 0.57 * 0.2);
     width: 90%;
 
-    margin-bottom: calc(var(--main-element-viewport-height) * 0.09);
+    margin-bottom: calc(var(--base-viewport-dimension) * 0.57 * 0.09);
 
     .stage-info-container__header {
       height: 100%;

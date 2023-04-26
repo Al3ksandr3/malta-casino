@@ -1,12 +1,12 @@
 // ------ STYLES: START ------ //
 
 .header {
-  height: 40vh;
+  height: calc(var(--base-viewport-dimension) * 0.4);
   width: 100%;
 
   flex-shrink: 0;
 
-  margin-bottom: 3vh;
+  margin-bottom: calc(var(--base-viewport-dimension) * 0.03);
 }
 
 // ------ STYLES: END ------ //
