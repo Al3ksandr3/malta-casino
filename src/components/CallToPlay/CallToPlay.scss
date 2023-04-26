@@ -1,6 +1,9 @@
 // ------ STYLES: START ------ //
 
 .call-to-play {
+  --top-border-width: 3px;
+  --side-border-width: 1.5px;
+
   height: 7%;
   width: 100%;
 
@@ -14,9 +17,9 @@
   z-index: 5;
 
   border: {
-    left: 1.5px solid var(--brand-orange-color);
-    right: 1.5px solid var(--brand-orange-color);
-    top: 3px solid var(--brand-orange-color);
+    left: var(--side-border-width) solid var(--brand-orange-color);
+    right: var(--side-border-width) solid var(--brand-orange-color);
+    top: var(--top-border-width) solid var(--brand-orange-color);
   }
 
   background-color: var(--grey-900);
@@ -39,3 +42,28 @@
 }
 
 // ------ STYLES: END ------ //
+
+// ------ MEDIA QUERIES: START ------ //
+
+@media screen and (max-width: 1100px) {
+  .call-to-play {
+    --top-border-width: 3px;
+    --side-border-width: 1.5px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .call-to-play {
+    --top-border-width: 2px;
+    --side-border-width: 1px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .call-to-play {
+    --top-border-width: 1.5px;
+    --side-border-width: 0.5px;
+  }
+}
+
+// ------ MEDIA QUERIES: END ------ //

@@ -8,6 +8,11 @@
 // ------ STYLES: START ------ //
 
 .stage-info-container {
+  --border-width: 5px;
+  --orange-line-height: 5px;
+  --orange-line-shadow-vertical-offset: 3px;
+  --orange-line-shadow-spread: 10px;
+
   @extend %flex-class;
   justify-content: flex-start;
 
@@ -16,9 +21,9 @@
   position: relative;
 
   border: {
-    left: 5px solid var(--grey-200);
-    right: 5px solid var(--grey-200);
-    bottom: 5px solid var(--grey-200);
+    left: var(--border-width) solid var(--grey-200);
+    right: var(--border-width) solid var(--grey-200);
+    bottom: var(--border-width) solid var(--grey-200);
   }
 
   border-radius: var(--border-radius-type-three);
@@ -39,11 +44,12 @@
     position: absolute;
     top: 0;
 
-    height: 5px;
+    height: var(--orange-line-height);
     width: 35%;
 
     background-color: var(--brand-orange-color);
-    box-shadow: 0 3px 10px var(--brand-orange-color);
+    box-shadow: 0 var(--orange-line-shadow-vertical-offset)
+      var(--orange-line-shadow-spread) var(--brand-orange-color);
 
     border-bottom-left-radius: var(--border-radius-type-two);
     border-bottom-right-radius: var(--border-radius-type-two);
@@ -69,7 +75,7 @@
     .stage-info-container__header {
       height: 5%;
 
-      font-size: 2.2rem;
+      font-size: 2rem;
     }
 
     .stage-info-container__content {
@@ -102,7 +108,7 @@
     .stage-info-container__header {
       height: 20%;
 
-      font-size: 2.2rem;
+      font-size: 2rem;
     }
 
     .stage-info-container__content {
@@ -116,7 +122,7 @@
     .stage-info-container__header {
       height: 7%;
 
-      font-size: 2.2rem;
+      font-size: 2rem;
     }
 
     .stage-info-container__content {
@@ -131,7 +137,7 @@
   &---spring-series-stage-case--three {
     height: 21%;
 
-    border-top: 5px solid var(--grey-200);
+    border-top: var(--border-width) solid var(--grey-200);
 
     .stage-info-container__content {
       height: 100%;
@@ -147,7 +153,7 @@
   &---final-stage-case--one {
     height: 43%;
 
-    border-top: 5px solid var(--grey-200);
+    border-top: var(--border-width) solid var(--grey-200);
 
     .stage-info-container__content {
       height: 100%;
@@ -164,7 +170,7 @@
     .stage-info-container__header {
       height: 13%;
 
-      font-size: 2.2rem;
+      font-size: 2rem;
     }
 
     .stage-info-container__content {
@@ -182,7 +188,7 @@
     .stage-info-container__header {
       height: 17%;
 
-      font-size: 2.2rem;
+      font-size: 2rem;
     }
 
     .stage-info-container__content {
@@ -222,3 +228,43 @@
 }
 
 // ------ STYLES: END ------ //
+
+// ------ MEDIA QUERIES: START ------ //
+
+@media screen and (max-width: 1100px) {
+  .stage-info-container {
+    --border-width: 5px;
+    --orange-line-height: 5px;
+    --orange-line-shadow-vertical-offset: 3px;
+    --orange-line-shadow-spread: 10px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .stage-info-container {
+    --border-width: 4px;
+    --orange-line-height: 4px;
+    --orange-line-shadow-vertical-offset: 2.5px;
+    --orange-line-shadow-spread: 7px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .stage-info-container {
+    --border-width: 3px;
+    --orange-line-height: 3px;
+    --orange-line-shadow-vertical-offset: 2px;
+    --orange-line-shadow-spread: 5px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .stage-info-container {
+    --border-width: 2px;
+    --orange-line-height: 2px;
+    --orange-line-shadow-vertical-offset: 1.5px;
+    --orange-line-shadow-spread: 3px;
+  }
+}
+
+// ------ MEDIA QUERIES: END ------ //

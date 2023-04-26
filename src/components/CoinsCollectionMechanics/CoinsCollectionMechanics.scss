@@ -1,6 +1,9 @@
 // ------ STYLES: START ------ //
 
 .coins-collection-mechanics {
+  --border-width: 3px;
+  --arrow-icon-border-width: 2px;
+
   height: 4vh;
   width: 40%;
 
@@ -11,7 +14,7 @@
 
   position: relative;
 
-  border: 3px solid var(--grey-200);
+  border: var(--border-width) solid var(--grey-200);
   border-radius: calc(var(--border-radius-type-three) + 5px);
 
   background-color: var(--grey-700);
@@ -39,7 +42,7 @@
     justify-content: center;
     align-items: center;
 
-    border: 2px solid var(--font-color-main);
+    border: var(--arrow-icon-border-width) solid var(--font-color-main);
     border-radius: 2vh;
 
     background-color: var(--brand-orange-color);
@@ -53,3 +56,28 @@
 }
 
 // ------ STYLES: END ------ //
+
+// ------ MEDIA QUERIES: START ------ //
+
+@media screen and (max-width: 1100px) {
+  .coins-collection-mechanics {
+    --border-width: 3px;
+    --arrow-icon-border-width: 2px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .coins-collection-mechanics {
+    --border-width: 2px;
+    --arrow-icon-border-width: 1.5px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .coins-collection-mechanics {
+    --border-width: 1px;
+    --arrow-icon-border-width: 0.5px;
+  }
+}
+
+// ------ MEDIA QUERIES: END ------ //

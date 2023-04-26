@@ -1,6 +1,10 @@
 // ------ STYLES: START ------ //
 
 .prize-description-item-with-orange-line {
+  --orange-line-width: 5px;
+  --orange-line-shadow-vertical-offset: 3px;
+  --orange-line-shadow-spread: 10px;
+
   height: 30%;
   width: 100%;
 
@@ -24,13 +28,14 @@
 
   &__orange-line {
     height: 70%;
-    width: 5px;
+    width: var(--orange-line-width);
 
     position: absolute;
     left: 0;
 
     background-color: var(--brand-orange-color);
-    box-shadow: 0 3px 10px var(--brand-orange-color);
+    box-shadow: 0 var(--orange-line-shadow-vertical-offset)
+      var(--orange-line-shadow-spread) var(--brand-orange-color);
 
     border-top-right-radius: var(--border-radius-type-two);
     border-bottom-right-radius: var(--border-radius-type-two);
@@ -66,3 +71,39 @@
 }
 
 // ------ STYLES: START ------ //
+
+// ------ MEDIA QUERIES: START ------ //
+
+@media screen and (max-width: 1100px) {
+  .prize-description-item-with-orange-line {
+    --orange-line-width: 5px;
+    --orange-line-shadow-vertical-offset: 3px;
+    --orange-line-shadow-spread: 10px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .prize-description-item-with-orange-line {
+    --orange-line-width: 4px;
+    --orange-line-shadow-vertical-offset: 2.5px;
+    --orange-line-shadow-spread: 7px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .prize-description-item-with-orange-line {
+    --orange-line-width: 3px;
+    --orange-line-shadow-vertical-offset: 2px;
+    --orange-line-shadow-spread: 5px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .prize-description-item-with-orange-line {
+    --orange-line-width: 2px;
+    --orange-line-shadow-vertical-offset: 1.5px;
+    --orange-line-shadow-spread: 3px;
+  }
+}
+
+// ------ MEDIA QUERIES: END ------ //

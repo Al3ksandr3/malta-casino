@@ -1,6 +1,9 @@
 // ------ STYLES: START ------ //
 
 .time-widget {
+  --border-width: 3px;
+  --box-shadow-spread: 7px;
+
   height: 4vh;
   width: 30%;
 
@@ -9,10 +12,10 @@
   justify-content: space-between;
   align-items: center;
 
-  border: 3px solid var(--brand-orange-color);
+  border: var(--border-width) solid var(--brand-orange-color);
   border-radius: calc(var(--border-radius-type-three) - 2px);
 
-  box-shadow: 0 0 7px var(--brand-orange-color);
+  box-shadow: 0 0 var(--box-shadow-spread) var(--brand-orange-color);
 
   &__clock-icon {
     height: 4vh;
@@ -37,6 +40,8 @@
   &__time {
     width: 80%;
 
+    font-size: 1.4rem;
+
     text-align: center;
     white-space: nowrap;
     overflow: hidden;
@@ -45,3 +50,28 @@
 }
 
 // ------ STYLES: END ------ //
+
+// ------ MEDIA QUERIES: START ------ //
+
+@media screen and (max-width: 1100px) {
+  .time-widget {
+    --border-width: 3px;
+    --box-shadow-spread: 7px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .time-widget {
+    --border-width: 2px;
+    --box-shadow-spread: 5px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .time-widget {
+    --border-width: 1.5px;
+    --box-shadow-spread: 3px;
+  }
+}
+
+// ------ MEDIA QUERIES: END ------ //

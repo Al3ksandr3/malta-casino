@@ -7,6 +7,9 @@
 // ------ STYLES: START ------ //
 
 .header-call-to-play {
+  --bottom-border-width: 3px;
+  --side-border-width: 1.5px;
+
   @extend %flex-class;
   justify-content: space-between;
 
@@ -22,9 +25,9 @@
   background-color: transparent;
 
   border: {
-    left: 1.5px solid transparent;
-    right: 1.5px solid transparent;
-    bottom: 3px solid transparent;
+    left: var(--side-border-width) solid transparent;
+    right: var(--side-border-width) solid transparent;
+    bottom: var(--bottom-border-width) solid transparent;
   }
 
   transition: background-color 0.2s linear, border 0.2s linear;
@@ -55,11 +58,36 @@
     background-color: var(--grey-900);
 
     border: {
-      left: 1.5px solid var(--brand-orange-color);
-      right: 1.5px solid var(--brand-orange-color);
-      bottom: 3px solid var(--brand-orange-color);
+      left: var(--side-border-width) solid var(--brand-orange-color);
+      right: var(--side-border-width) solid var(--brand-orange-color);
+      bottom: var(--bottom-border-width) solid var(--brand-orange-color);
     }
   }
 }
 
 // ------ STYLES: END ------ //
+
+// ------ MEDIA QUERIES: START ------ //
+
+@media screen and (max-width: 1100px) {
+  .header-call-to-play {
+    --bottom-border-width: 3px;
+    --side-border-width: 1.5px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .header-call-to-play {
+    --bottom-border-width: 2px;
+    --side-border-width: 1px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .header-call-to-play {
+    --bottom-border-width: 1.5px;
+    --side-border-width: 0.5px;
+  }
+}
+
+// ------ MEDIA QUERIES: END ------ //
